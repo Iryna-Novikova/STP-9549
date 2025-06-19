@@ -1,11 +1,11 @@
 {
-  "name": "evpl_vite_template",
+  "name": "STP-9549",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/evpl_vite_template/",
+    "build": "vite build --base=/STP-9549/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview"
   },
