@@ -4,11 +4,10 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Poppins',
     'DynaPuff', sans-serif;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: 1.25;
   font-weight: 400;
 
-  color: #094b3c;
-  background-color: lightgreen;
+  background-color: #c2f07a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,7 +22,10 @@ body {
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
+  color: #094b3c;
   margin: 0;
+  scroll-margin-bottom: 92px;
+  background: linear-gradient(270deg, #c2f07a 0%, #e6f8c9 48.56%, #7dc081 100%);
 }
 
 h1,
@@ -35,9 +37,16 @@ h2 {
   color: #f66706;
 }
 
-main {
+/* main {
   flex-grow: 1;
 }
 main:has(.back-link) {
   text-align: center;
+} */
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .body {
+    scroll-margin-bottom: 114px;
+  }
 }
