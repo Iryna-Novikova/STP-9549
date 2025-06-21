@@ -48,21 +48,25 @@ html {
 }
 
 .burger-icon {
-  /* fill: #e6e6e6; */
   stroke-width: 3.12px;
   stroke: #f7f5f5;
 }
 
-.burger-btn:hover > .burger-icon,
 .header-nav-link:hover {
   color: #cceab6;
 }
 
-.burger-btn:focus > .burger-icon,
+.burger-btn:hover .burger-icon {
+  stroke: #cceab6;
+}
+
 .header-nav-link:focus {
   color: #aded7e;
 }
 
+.burger-btn:focus .burger-icon {
+  stroke: #aded7e;
+}
 /* Styles for burger-menu */
 .wrapper {
   width: 228px;
@@ -93,9 +97,18 @@ html {
   right: 11px;
   width: 30px;
   height: 30px;
+  padding: 6px;
   border: none;
   background: none;
   color: inherit;
+}
+
+.btn-close-icon {
+  fill: #e6e6e6;
+}
+
+.btn-close:hover .btn-close-icon {
+  fill: #cceab6;
 }
 
 [data-visible='open'] {
