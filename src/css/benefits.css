@@ -1,11 +1,7 @@
 /* Styles for Mobile devices */
 
 .section-title{
-font-weight: 400;
-font-size: 35px;
-line-height: 1.06;
 text-align: center;
-color: #f66706; 
 margin-bottom: 24px;
 }
 
@@ -24,8 +20,8 @@ margin-bottom: 24px;
   background-color: #eeffde;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 .benefits-description{
 font-weight: 500;
@@ -42,6 +38,14 @@ flex-direction: column;
 align-items: center;
 margin-bottom: 24px;
 }
+
+.benefits-item:nth-of-type(1) { order: 1; } 
+.benefits-item:nth-of-type(3) { order: 2; } 
+.benefits-item:nth-of-type(5) { order: 3; } 
+.benefits-item:nth-of-type(7) { order: 4; } 
+.benefits-item:nth-of-type(2) { order: 5; } 
+.benefits-item:nth-of-type(4) { order: 6; } 
+.benefits-item:nth-of-type(6) { order: 7; }  
 
 .benefits-item {
 display: flex;
@@ -60,74 +64,26 @@ display: flex;
   position: relative;
   list-style: none;
  }
- .benefits-item.right:nth-of-type(2)::before
-{
+
+.benefits-item:nth-of-type(3)::before,
+.benefits-item:nth-of-type(5)::before,
+.benefits-item:nth-of-type(7)::before,
+.benefits-item:nth-of-type(2)::before,
+.benefits-item:nth-of-type(4)::before,
+.benefits-item:nth-of-type(6)::before {
   content: "";
   position: absolute;
   top: -25px;
   left: 50%;
   width: 2px;
   height: 25px;
-  border: 1px solid #09604d; 
-  transform: translateX(-50%);
-}
- .benefits-item.left:nth-of-type(3)::before
-{
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  width: 2px;
-  height: 25px;
-  border: 1px solid #09604d; 
-  transform: translateX(-50%);
-}
- .benefits-item.right:nth-of-type(4)::before
-{
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  width: 2px;
-  height: 25px;
-  border: 1px solid #09604d; 
+  border: 1px solid #09604d;
   transform: translateX(-50%);
 }
 
- .benefits-item.left:nth-of-type(5)::before
-{
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  width: 2px;
-  height: 25px;
-  border: 1px solid #09604d; 
-  transform: translateX(-50%);
+.benefits-item:nth-of-type(1)::before {
+  content: none;
 }
- .benefits-item.right:nth-of-type(6)::before
-{
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  width: 2px;
-  height: 25px;
-  border: 1px solid #09604d; 
-  transform: translateX(-50%);
-}
-.benefits-item.center:nth-of-type(7)::before
-{
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  width: 2px;
-  height: 25px;
-  border: 1px solid #09604d; 
-  transform: translateX(-50%);
-}
-
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
@@ -154,7 +110,6 @@ display: flex;
   margin: 0 auto;
   padding: 40px;
   }
-
 
 .benefits-description {
 font-size: 24px;
@@ -283,3 +238,27 @@ line-height: 0.75;
   display: none;
 }
 }
+
+
+<section class="section" id="benefits">
+  <div class="container">
+    <h2 class="section-title">Learning Benefits</h2>
+    <div class="benefits-border">
+<p class="benefits-description">
+      Match It supports the development of:
+    </p>
+    <ul class="benefits-list">
+      <li class="benefits-item left">Visual-spatial awareness</li>
+      <li class="benefits-item right">Pattern recognition</li>
+      <li class="benefits-item left">Problem-solving logic</li>
+      <li class="benefits-item right">Vocabulary building</li>
+      <li class="benefits-item left">Memory strengthening</li>
+      <li class="benefits-item right">Fine motor skills through drawing gestures</li>
+      <li class="benefits-item center">Listening comprehension with audio object labels</li>
+    </ul>
+    <p class="benefits-description">
+      It creates a joyful routine of independent learning that parents can trust.
+    </p>
+    </div>
+  </div>
+</section>
