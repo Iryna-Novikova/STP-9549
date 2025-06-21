@@ -24,12 +24,31 @@
     />
     <!--підключення стилів-->
     <script type="module" crossorigin src="/STP-9549/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-9549/assets/styles-CQt1hXRe.css">
+    <link rel="stylesheet" crossorigin href="/STP-9549/assets/styles-DZWd-QFs.css">
   </head>
   <body>
     <header class="header">
   <div class="container header-container">
-    <a class="header-logo-link" href="./index.html">LOGO</a>
+    <a class="header-logo-link" href="./index.html">
+      <picture class="header-logo-img">
+        <!-- Desktop -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="/STP-9549/assets/logo-desc-Dc7XMDoB.png 1x, /STP-9549/assets/logo-desc@2x-Bm6O_FoC.png 2x"
+        />
+        <!-- Mobile -->
+        <source
+          media="(max-width: 1199px)"
+          srcset="/STP-9549/assets/logo-D8CrVAWj.png 1x, /STP-9549/assets/logo@2x-DZM-inWM.png 2x"
+        />
+
+        <!-- Fullback image -->
+        <img
+          src="/STP-9549/assets/logo-desc-Dc7XMDoB.png"
+          alt="LOGO"
+        />
+      </picture>
+    </a>
     <nav class="header-nav">
       <ul class="header-nav-list">
         <li><a class="header-nav-link" href="#hero">Home</a></li>
@@ -47,7 +66,7 @@
       </ul>
     </nav>
     <button type="button" class="burger-btn" data-action="open">
-      <svg class="modal-close" width="24" height="24">
+      <svg class="burger-icon" width="20" height="20">
         <use href="/STP-9549/assets/sprite-CISxQGRh.svg#icon-burger-menu"></use>
       </svg>
     </button>
