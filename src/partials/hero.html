@@ -1,5 +1,53 @@
 <section class="section" id="hero">
-  <div class="container">
-    <h1>Match It – Matching Game</h1>
+  <div class="container hero-container">
+    <!-- phone picture  -->
+    <picture class="header-logo-img">
+      <!-- Desktop -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          /img/hero/desk-iphone-min.png    1x,
+          /img/hero/desk-iphone@2x-min.png 2x
+        "
+      />
+      <!-- Mobile -->
+      <source
+        media="(max-width: 1199px)"
+        srcset="
+          /img/hero/mob-iphone-min.png    1x,
+          /img/hero/mob-iphone@2x-min.png 2x
+        "
+      />
+
+      <!-- Fullback image -->
+      <img src="/img/header/logo-desc.png" alt="LOGO" />
+    </picture>
+    <div>
+      <h1>Match It – Matching Game</h1>
+      <a
+        class="game-link"
+        href="https://play.google.com/store/apps/details?id=com.rayo.matchit&hl=en&gl=us"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          class="icon-google"
+          src="/img/hero/icon-google.png"
+          width="40"
+          height="40"
+          alt="google"
+        />
+        Download Free on Google Play
+      </a>
+      <p class="p-title">Welcome to Match It</p>
+      <p>
+        Match It is more than just a game—it's your child’s first step into
+        playful learning. Designed to stimulate visual-spatial recognition,
+        matching logic, and early language development, this game offers endless
+        fun wrapped in colorful, interactive experiences. Whether you're a
+        parent, teacher, or early learning specialist, Match It is a joyful
+        companion for children aged 3 and up.
+      </p>
+    </div>
   </div>
 </section>

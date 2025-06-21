@@ -1,0 +1,10 @@
+.hero-container {
+  background-image: url('/img/hero/mob-bckgr-hero.webp');
+  /* heigt: 886px; */
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: url('/img/hero/hero-mob@2x-min.webp');
+  }
+}
