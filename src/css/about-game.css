@@ -1,0 +1,127 @@
+/* .about-container {
+  position: relative;
+  background-image: url('/img/circles.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left -16px bottom -64px;
+  z-index: 3;
+} */
+
+/* .about-container::after {
+  position: absolute;
+  background-image: url('/img/circles.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left bottom -64%;
+  z-index: 3;
+} */
+
+.about-title-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.about-title {
+  width: 200px;
+  text-align: center;
+}
+
+.about-text-box {
+  border: 1px solid #09604d;
+  border-radius: 0 16px 16px 16px;
+  padding: 18px 15px;
+  line-height: 1.63;
+  background-color: #eeffde;
+  position: relative;
+  z-index: 5;
+}
+
+.about-text-box::before {
+  position: absolute;
+  content: '';
+  width: 45px;
+  height: 1px;
+  background-color: #09604d;
+  top: 0;
+  left: 0;
+  transform: rotate(-63deg);
+  transform-origin: left top;
+  z-index: 1;
+}
+
+.about-text-box::after {
+  position: absolute;
+  content: '';
+  width: 80px;
+  height: 1px;
+  background-color: #09604d;
+  bottom: 0;
+  right: 13px;
+  transform: rotate(-90deg);
+  transform-origin: right bottom;
+  z-index: 1;
+}
+
+.about-circle {
+  position: absolute;
+  left: 0;
+  bottom: -70px;
+  z-index: 2;
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .about-title-box {
+    gap: 96px;
+  }
+
+  .about-title {
+    width: 956px;
+    font-size: 64px;
+    line-height: 1.02;
+    text-align: left;
+  }
+
+  .about-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .about-text-box {
+    padding: 24px;
+    line-height: 1.5;
+    background-color: #eeffde;
+    position: relative;
+    z-index: 5;
+    width: 956px;
+  }
+
+  .about-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-text-box::before {
+    width: 115px;
+    transform: rotate(-150deg);
+  }
+
+  .about-circle {
+    display: none;
+  }
+
+  .about-text-box::after {
+    width: 123px;
+    height: 1px;
+    background-color: #09604d;
+    bottom: 0;
+    right: 46px;
+    transform: rotate(-90deg);
+    transform-origin: right bottom;
+    z-index: 1;
+  }
+}
