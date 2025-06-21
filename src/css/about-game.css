@@ -29,6 +29,11 @@
   text-align: center;
 }
 
+.about-img {
+  width: 60px;
+  height: 60px;
+}
+
 .about-text-box {
   border: 1px solid #09604d;
   border-radius: 0 16px 16px 16px;
@@ -36,7 +41,7 @@
   line-height: 1.63;
   background-color: #eeffde;
   position: relative;
-  z-index: 5;
+  z-index: 10;
 }
 
 .about-text-box::before {
@@ -55,7 +60,7 @@
 .about-text-box::after {
   position: absolute;
   content: '';
-  width: 80px;
+  width: 79px;
   height: 1px;
   background-color: #09604d;
   bottom: 0;
@@ -94,10 +99,8 @@
   .about-text-box {
     padding: 24px;
     line-height: 1.5;
-    background-color: #eeffde;
-    position: relative;
-    z-index: 5;
     width: 956px;
+    font-size: 20px;
   }
 
   .about-img {
@@ -106,6 +109,7 @@
   }
 
   .about-text-box::before {
+    height: 2px;
     width: 115px;
     transform: rotate(-150deg);
   }
@@ -116,7 +120,7 @@
 
   .about-text-box::after {
     width: 123px;
-    height: 1px;
+    height: 2px;
     background-color: #09604d;
     bottom: 0;
     right: 46px;
