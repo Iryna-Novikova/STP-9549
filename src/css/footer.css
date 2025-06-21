@@ -1,3 +1,4 @@
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -41,3 +42,110 @@
 .nav-link.active::after {
   background: #747bff;
 }
+
+/* Cookies Policy */
+.container-cookies {
+  position: relative;
+border: 3px dashed #09604d;
+border-radius: 16px;
+width: 288px;
+   background-color: rgba(238, 255, 222, 0.6);
+  padding: 40px 20px;
+  margin-top: 20px;
+  overflow: visible;
+  }
+
+.overlay-cookies {
+  position: absolute;
+  top: -70px; 
+  right: 47px; 
+  width: 105px;
+  height: 105px;
+  z-index: 10;
+  pointer-events: none;
+  user-select: none;
+}
+
+.main-cookies {
+  color: #094B3C;
+   margin-bottom: 32px;
+   text-align: center;
+   
+ }
+.update-date {
+  display: block;
+}
+
+.cookies-subtitle{
+margin-bottom: 25px;
+}
+
+.title-subtitle-sub{
+font-weight: 500;
+line-height: 1;
+}
+
+.text-cookies{
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.87; 
+margin-bottom: 25px;
+}
+
+.list-cookies{
+font-size: 16px;
+line-height: 1.87; 
+margin-bottom: 25px;  
+list-style-type: disc;     
+}
+
+.item-cookies{
+font-weight: 500;
+line-height: 1;
+}
+
+.text-cookies li {
+  display: list-item; 
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+a {
+  color: #094B3C;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #067B3A;
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+.container-cookies{
+  width: 1152px;
+padding: 40px 60px 40px 56px;
+}
+
+.update-date {
+    display: inline;}
+
+.main-title{
+  margin-bottom: 42px;
+  font-weight: 500;
+font-size: 40px;
+line-height: 0.75;
+text-align: center;
+}
+
+.overlay-cookies {
+  left: 182px;  
+  width: 154px;
+  height: 154px;
+ top: -58px; 
+}
+
+.list-cookies{
+  padding-left: 30px;}
+}
+
