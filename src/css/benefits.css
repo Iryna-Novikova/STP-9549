@@ -6,22 +6,12 @@ margin-bottom: 24px;
 }
 
 .benefits-border {
-  border: 3px solid; 
-  border-image: repeating-linear-gradient(
-    45deg,             
-    #09604d 0,
-    #09604d 20px,       
-    transparent 20px,
-    transparent 40px    
-  ) 1 round;            
+  border: 2px dashed #09604d; 
   border-radius: 16px;
   width: 100%;
-  max-width: 288px;
   background-color: #eeffde;
-  box-sizing: border-box;
   margin: 0 auto;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding: 24px 17px;
 }
 .benefits-description{
 font-weight: 500;
@@ -59,10 +49,11 @@ display: flex;
   border-radius: 16px;
   padding: 16px;
   width: 254px;
-  height: 88px;
+  /* height: 88px; */
   background: #3b843f;
   position: relative;
   list-style: none;
+  display: inline-flex;
  }
 
 .benefits-item:nth-of-type(3)::before,
@@ -94,16 +85,8 @@ display: flex;
   }
 
 .benefits-border {
-  border: 3px solid; 
-  border-image: repeating-linear-gradient(
-    45deg,
-    #09604d 0,
-    #09604d 20px,
-    transparent 20px,
-    transparent 40px
-  ) 1 round;
+ border: 2px dashed #09604d;
   border-radius: 16px;
-  max-width: 1152px;
   width: 100%;
   background-color: #eeffde;
   box-sizing: border-box;
@@ -129,8 +112,9 @@ line-height: 0.75;
 .benefits-item {
   font-size: 20px;
   line-height: 1.5;
-  width: 262px;
-  position: relative;
+  display: inline-block;
+   position: relative;
+   
 }
 
 .benefits-item.left:nth-of-type(1) { grid-column: 1; grid-row: 1; }
@@ -179,7 +163,7 @@ line-height: 0.75;
   position: absolute;
   top: 50%;
   left: 100%;
-  width: 105px;
+  width: 115px;
   height: 2px;
   border: 1px solid #09604d;
   transform: translateY(-50%);
@@ -189,10 +173,10 @@ line-height: 0.75;
 {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -50px;
   left: 50%;
   width: 2px;
-  height: 20px;
+  height: 50px;
   border: 1px solid #09604d; 
   transform: translateX(-50%);
 }
@@ -201,10 +185,10 @@ line-height: 0.75;
 {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -65px;
   left: 50%;
   width: 2px;
-  height: 20px;
+  height: 65px;
   border: 1px solid #09604d; 
   transform: translateX(-50%);
 }
@@ -213,10 +197,10 @@ line-height: 0.75;
 {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -50px;
   left: 50%;
   width: 2px;
-  height: 20px;
+  height: 50px;
   border: 1px solid #09604d; 
   transform: translateX(-50%);
 }
@@ -225,10 +209,10 @@ line-height: 0.75;
 {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -65px;
   left: 50%;
   width: 2px;
-  height: 20px;
+  height: 65px;
   border: 1px solid #09604d;
   transform: translateX(-50%);
 } 
@@ -239,26 +223,3 @@ line-height: 0.75;
 }
 }
 
-
-<section class="section" id="benefits">
-  <div class="container">
-    <h2 class="section-title">Learning Benefits</h2>
-    <div class="benefits-border">
-<p class="benefits-description">
-      Match It supports the development of:
-    </p>
-    <ul class="benefits-list">
-      <li class="benefits-item left">Visual-spatial awareness</li>
-      <li class="benefits-item right">Pattern recognition</li>
-      <li class="benefits-item left">Problem-solving logic</li>
-      <li class="benefits-item right">Vocabulary building</li>
-      <li class="benefits-item left">Memory strengthening</li>
-      <li class="benefits-item right">Fine motor skills through drawing gestures</li>
-      <li class="benefits-item center">Listening comprehension with audio object labels</li>
-    </ul>
-    <p class="benefits-description">
-      It creates a joyful routine of independent learning that parents can trust.
-    </p>
-    </div>
-  </div>
-</section>
