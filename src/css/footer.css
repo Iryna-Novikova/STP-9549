@@ -25,10 +25,10 @@
 .nav::after {
   position: absolute;
   content: '';
-  width: 320px;
+  width: 100%;
   height: 1px;
   background-color: #eeffde;
-  left: -16px;
+  left: 0;
   bottom: -34px;
 }
 
@@ -79,11 +79,6 @@
     padding-top: 40px;
   }
 
-  .nav::after {
-    width: 100%;
-    left: 0;
-  }
-
   .nav-list {
     flex-direction: row;
     gap: 40px;
@@ -100,4 +95,3 @@
     }
   }
 }
-
