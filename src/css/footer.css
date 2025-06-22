@@ -1,125 +1,103 @@
-.footer {
-  position: relative;
-  width: 100%;
-  max-width: 320px;
-  color: #EEFFDE;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1;
-  user-select: none;
-  text-align: center;
-  padding-top: 29px; 
-  padding-bottom: 40px;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  overflow: hidden;
- }
-
-.image-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 0;
-}
-
-.overlay-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  margin: 0;
-  padding: 0;
-  pointer-events: none;
-  user-select: none;
-}
-
-.footer .container {
-  position: relative;
-  width: 100%;
-  max-width: 320px;
-  padding: 22px 16px;
-  box-sizing: border-box;
+ width: 100%;.footer > .container {
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  z-index: 1;
-  background-color: #67AD56;
+  gap: 69px;
+  color: #eeffde;
+  background-image: url('/img/footer/mob-green-min.png'),
+    linear-gradient(to bottom right, #67ad56, #67ad56);
+  background-repeat: no-repeat;
+  background-position: top center, left 0 top 29px;
+  background-size: 320px, auto;
+  font-size: 20px;
+  line-height: 1;
 }
 
-.background-container {
-  width: 100%;
- }
-
 .nav {
+  padding-top: 22px;
   width: 100%;
-  margin-bottom: 34px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav::after {
+  position: absolute;
+  content: '';
+  width: 320px;
+  height: 1px;
+  background-color: #eeffde;
+  left: -16px;
+  bottom: -34px;
 }
 
 .nav-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 24px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
 }
 
 .nav-link {
-  display: block;
-  width: 100%;
-  text-decoration: none;
-  color: #EEFFDE;
-  font-size: 18px;
-  font-weight: 500;
   transition: color 0.2s ease-in;
-  word-wrap: break-word;
-  white-space: normal;
 }
 
-.nav-link:hover,
+.nav-link:hover {
+  color: #cceab6;
+}
+
 .nav-link:focus {
-  color: #747bff;
-}
-
-.separator-line {
-  width: 100%;
-  height: 1px;
-  background: #EEFFDE;
-  margin-bottom: 34px;
+  color: #aded7e;
 }
 
 .footer-edlist {
-  width: 100%;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #EEFFDE;
   word-wrap: break-word;
+  padding-bottom: 22px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .footer > .container {
+    background-image: url('/img/footer/mob-green@2x-min.png'),
+      linear-gradient(to bottom right, #67ad56, #67ad56);
+  }
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
+  .footer > .container {
+    padding-top: 71px;
+    background-image: url('/img/footer/desk-greenunion-min.png'),
+      linear-gradient(to bottom right, #67ad56, #67ad56);
+    background-size: 1200px auto;
+    background-position: top center, left 0 top 69px;
+    /* margin: 0 auto; */
   }
 
-.footer{
-  width: 100%;
-min-width: 1200px;
-}
+  .nav {
+    padding-top: 40px;
+  }
 
-.footer .container {
+  .nav::after {
     width: 100%;
-    max-width: 1200px; 
-    padding: 76px 16px;
-        margin: 0 auto; 
+    left: 0;
   }
 
-.nav-list {
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    gap: 40px; 
-        }
+  .nav-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .footer-edlist {
+    padding-bottom: 40px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .footer > .container {
+      background-image: url('/img/footer/desk-greenunion@2x-min.png'),
+        linear-gradient(to bottom right, #67ad56, #67ad56);
+    }
+  }
+}
 
