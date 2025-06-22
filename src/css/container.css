@@ -8,6 +8,7 @@
 
 .section {
   margin-bottom: 72px;
+  scroll-margin-top: 102px;
 }
 
 /* Styles for Desktop devices */
@@ -19,5 +20,6 @@
 
   .section {
     margin-bottom: 120px;
+    scroll-margin-top: 134px;
   }
 }
