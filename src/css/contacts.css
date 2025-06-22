@@ -1,0 +1,59 @@
+.title-contact{
+    text-align: center;
+margin-bottom: 24px;}
+
+.text-contact{
+font-weight: 500;
+font-size: 20px;
+line-height: 1.4;
+text-align: center;
+margin-bottom: 16px;
+}
+
+.contact-info{
+line-height: 1.25;
+text-align: center;
+gap: 16px}
+
+.contact-info li {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 8px;               
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.icon {
+    fill: none;
+    stroke: #094B3C
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+.title-contact{
+font-size: 64px;
+line-height: 1.02;}
+
+.text-contact{
+font-size: 30px;
+line-height: 0.67;
+margin-bottom: 64px;
+}
+.contact-info{
+font-weight: 500;
+font-size: 20px;
+line-height: 1.5;
+gap: 16;
+display: flex;            
+  flex-direction: column;   
+  align-items: center;      
+  justify-content: center; }
+
+.contact-info li {
+  display: flex;          
+  align-items: center;
+  flex-direction: row;    
+  text-align: center;
+  }
+}
