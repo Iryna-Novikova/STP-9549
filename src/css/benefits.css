@@ -98,7 +98,7 @@
   }
 
   .benefits-border {
-    padding: 32px 87px 41px;
+    padding: 32px 96px;
   }
 
   .benefits-description {
@@ -109,8 +109,8 @@
   .benefits-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 24px;
-    column-gap: 96px;
+    row-gap: 28px;
+    column-gap: 87px;
     padding: 0;
     justify-items: center;
     grid-auto-rows: minmax(128px, auto);
@@ -174,7 +174,7 @@
     top: 50%;
     left: 100%;
     /*   width: calc(100% + 35px);  */
-    width: 100px;
+    width: 92px;
     height: 2px;
     background-color: #09604d;
     transform: translateY(-50%);
@@ -186,10 +186,10 @@
   .benefits-item.right:nth-of-type(4)::before {
     content: '';
     position: absolute;
-    top: -52px;
+    top: -57px;
     left: 50%;
     width: 2px;
-    height: 52px;
+    height: 57px;
     border: 1px solid #09604d;
     transform: translateX(-50%);
   }
