@@ -125,7 +125,10 @@
   .features-img-title {
     width: 100px;
     height: 100px;
-    /* position: relative; */
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
   }
 
   .features-title {
@@ -150,31 +153,23 @@
     line-height: 1.5;
   }
 
-  .features-img-title {
-    position: absolute;
-    z-index: 10;
-  }
-
   .features-img-title::before {
     width: 2px;
     height: 1087px;
     background-color: #09604d;
-    top: calc(100% + 1px);
+    top: calc(100% - 1px);
     left: 50%;
     transform: rotate(0deg);
     transform-origin: left top;
   }
 
-  /* .features-item:first-child::before {
-    content: '';
-    position: absolute;
-    z-index: 10;
+  .features-item:first-child::before {
     top: 0;
     left: -1px;
-    width: 47px;
+    width: 110px;
     height: 1px;
     background-color: #09604d;
     transform: rotate(-76deg);
     transform-origin: left top;
-  } */
+  }
 }
