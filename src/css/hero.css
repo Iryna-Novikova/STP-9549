@@ -1,6 +1,62 @@
+#hero {
+  padding-top: 92px;
+}
+
+.container.hero-container {
+  padding: 0;
+}
+
 .hero-container {
   background-image: url('/img/hero/mob-bckgr-hero.webp');
-  /* heigt: 886px; */
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.hero-info-box {
+  display: flex;
+  padding: 0 16px 43px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-img-box {
+  padding: 16px 37px;
+}
+
+.hero-title {
+  text-align: center;
+}
+
+.game-link {
+  display: flex;
+  border: 1px solid #09604d;
+  border-radius: 16px;
+  padding: 7px 12px;
+  gap: 8px;
+  line-height: 2.14;
+  color: #181818;
+  background-color: #eeffde;
+  font-size: 14px;
+  align-items: center;
+}
+
+.game-link:hover {
+  background-color: #cceab6;
+}
+
+.game-link:focus {
+  background-color: #aded7e;
+}
+
+.hero-p-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+}
+
+.hero-p {
+  line-height: 1.63;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
