@@ -1,12 +1,11 @@
 /* Cookies Policy */
 .container-cookies {
   position: relative;
-border: 3px dashed #09604d;
+border: 2px dashed #09604d;
 border-radius: 16px;
-width: 288px;
+width: 100%;
    background-color: rgba(238, 255, 222, 0.6);
   padding: 40px 20px;
-  margin-top: 20px;
   overflow: visible;
   }
 
@@ -21,12 +20,6 @@ width: 288px;
   user-select: none;
 }
 
-.main-cookies {
-  color: #094B3C;
-   margin-bottom: 32px;
-   text-align: center;
-   
- }
 .update-date {
   display: block;
 }
@@ -85,26 +78,17 @@ line-height: 1;
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
 .container-cookies{
-  width: 1152px;
-padding: 40px 60px 40px 56px;
+ padding: 40px 58px;
 }
 
 .update-date {
     display: inline;}
 
-.main-title{
-  margin-bottom: 42px;
-  font-weight: 500;
-font-size: 40px;
-line-height: 0.75;
-text-align: center;
-}
-
 .overlay-cookies {
   left: 182px;  
   width: 154px;
   height: 154px;
- top: -58px; 
+ top: -99px; 
 }
 
 .list-cookies{
