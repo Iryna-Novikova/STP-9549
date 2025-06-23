@@ -13,15 +13,20 @@ margin-bottom: 16px;
 .contact-info{
 line-height: 1.25;
 text-align: center;
-gap: 16px}
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
 
 .contact-info li {
   display: flex;
+  width: 100%;
   flex-direction: column; 
   align-items: center;    
   gap: 8px;               
-  margin-bottom: 16px;
+/*   margin-bottom: 16px; */
   text-align: center;
+  justify-content: center;
 }
 
 .icon {
@@ -45,15 +50,11 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.5;
 gap: 16;
-display: flex;            
-  flex-direction: column;   
   align-items: center;      
   justify-content: center; }
 
 .contact-info li {
-  display: flex;          
-  align-items: center;
   flex-direction: row;    
-  text-align: center;
+  width: 621px;
   }
 }
