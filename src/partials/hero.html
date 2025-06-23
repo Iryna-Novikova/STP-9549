@@ -1,35 +1,60 @@
 <section class="section" id="hero">
   <div class="container hero-container">
     <!-- phone picture  -->
-    <div class="hero-img-box">
-      <picture class="hero-iphone-img">
-        <!-- Desktop -->
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            /img/hero/desk-iphone-min.png    1x,
-            /img/hero/desk-iphone@2x-min.png 2x
-          "
-        />
-        <!-- Mobile -->
-        <source
-          media="(max-width: 1199px)"
-          srcset="
-            /img/hero/mob-iphone-min.png    1x,
-            /img/hero/mob-iphone@2x-min.png 2x
-          "
-        />
+    <picture class="hero-iphone-img">
+      <!-- Desktop -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          /img/hero/desk-iphone-min.png    1x,
+          /img/hero/desk-iphone@2x-min.png 2x
+        "
+      />
+      <!-- Mobile -->
+      <source
+        media="(max-width: 1199px)"
+        srcset="
+          /img/hero/mob-iphone-min.png    1x,
+          /img/hero/mob-iphone@2x-min.png 2x
+        "
+      />
 
-        <!-- Fullback image -->
-        <img src="/img/hero/desk-iphone-min.png " alt="iphone img" />
-      </picture>
-    </div>
+      <!-- Fullback image -->
+      <img src="/img/hero/desk-iphone-min.png " alt="iphone img" />
+    </picture>
 
-    <!-- info box -->
-    <div class="hero-info-box">
-      <h1 class="hero-title">Match It – Matching Game</h1>
+    <div class="hero-info-wrapper">
+      <!-- info box -->
+      <div class="hero-info-box">
+        <h1 class="hero-title">Match It – Matching Game</h1>
+        <a
+          class="game-link game-link-mob"
+          href="https://play.google.com/store/apps/details?id=com.rayo.matchit&hl=en&gl=us"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            class="icon-google"
+            src="/img/hero/icon-google.png"
+            width="40"
+            height="40"
+            alt="google"
+          />
+          Download Free on Google Play
+        </a>
+        <p class="hero-p-title">Welcome to Match It</p>
+        <p class="hero-p">
+          Match It is more than just a gam — it's your child’s first step into
+          playful learning. Designed to stimulate visual-spatial recognition,
+          matching logic, and early language development, this game offers
+          endless fun wrapped in colorful, interactive experiences. Whether
+          you're a parent, teacher, or early learning specialist, Match It is a
+          joyful companion for children aged 3 and up.
+        </p>
+      </div>
+
       <a
-        class="game-link"
+        class="game-link game-link-desc"
         href="https://play.google.com/store/apps/details?id=com.rayo.matchit&hl=en&gl=us"
         rel="noopener noreferrer"
         target="_blank"
@@ -43,17 +68,15 @@
         />
         Download Free on Google Play
       </a>
-      <p class="hero-p-title">Welcome to Match It</p>
-      <p class="hero-p">
-        Match It is more than just a game—it's your child’s first step into
-        playful learning. Designed to stimulate visual-spatial recognition,
-        matching logic, and early language development, this game offers endless
-        fun wrapped in colorful, interactive experiences. Whether you're a
-        parent, teacher, or early learning specialist, Match It is a joyful
-        companion for children aged 3 and up.
-      </p>
     </div>
-
     <!-- circle img -->
+    <picture class="hero-circle">
+      <!-- desktop -->
+      <source media="(min-width: 1200px)" srcset="/img/desk-circle.png" />
+      <!-- Mobile -->
+      <source media="(max-width: 1199px)" srcset="/img/circles.png" />
+      <!-- Fullback image -->
+      <img src="/img/desk-circles.png" alt="Circle img" />
+    </picture>
   </div>
 </section>
