@@ -24,7 +24,7 @@
     />
     <!--підключення стилів-->
     <script type="module" crossorigin src="/STP-9549/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-9549/assets/styles-BE_8w5wL.css">
+    <link rel="stylesheet" crossorigin href="/STP-9549/assets/styles-BkAocj0f.css">
   </head>
   <body>
     <header class="header">
@@ -67,7 +67,7 @@
     </nav>
     <button type="button" class="burger-btn" data-action="open">
       <svg class="burger-icon" width="26" height="20">
-        <use href="/STP-9549/assets/sprite-4q000-0-.svg#icon-burger-menu"></use>
+        <use href="/STP-9549/assets/sprite-B-0PxPF3.svg#icon-burger-menu"></use>
       </svg>
     </button>
   </div>
@@ -91,7 +91,7 @@
         </ul>
         <button type="button" class="btn-close" data-action="close">
           <svg class="btn-close-icon" width="18" height="18">
-            <use href="/STP-9549/assets/sprite-4q000-0-.svg#icon-menu-close"></use>
+            <use href="/STP-9549/assets/sprite-B-0PxPF3.svg#icon-menu-close"></use>
           </svg>          
         </button>
       </div>
@@ -101,8 +101,79 @@
 
     <main>
       <section class="section" id="hero">
-  <div class="container">
-    <h1>Match It – Matching Game</h1>
+  <div class="container hero-container">
+    <!-- phone picture  -->
+    <picture class="hero-iphone-img">
+      <!-- Desktop -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="/STP-9549/assets/desk-iphone-min-BUlGO7hO.png 1x, /STP-9549/assets/desk-iphone@2x-min-BeHITSBm.png 2x"
+      />
+      <!-- Mobile -->
+      <source
+        media="(max-width: 1199px)"
+        srcset="/STP-9549/assets/mob-iphone-min-DLPrSkWi.png 1x, /STP-9549/assets/mob-iphone@2x-min-QVfKMhGw.png 2x"
+      />
+
+      <!-- Fullback image -->
+      <img src="/img/hero/desk-iphone-min.png " alt="iphone img" />
+    </picture>
+
+    <div class="hero-info-wrapper">
+      <!-- info box -->
+      <div class="hero-info-box">
+        <h1 class="hero-title">Match It – Matching Game</h1>
+        <a
+          class="game-link game-link-mob"
+          href="https://play.google.com/store/apps/details?id=com.rayo.matchit&hl=en&gl=us"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            class="icon-google"
+            src="data:image/png;base64,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"
+            width="40"
+            height="40"
+            alt="google"
+          />
+          Download Free on Google Play
+        </a>
+        <p class="hero-p-title">Welcome to Match It</p>
+        <p class="hero-p">
+          Match It is more than just a gam — it's your child’s first step into
+          playful learning. Designed to stimulate visual-spatial recognition,
+          matching logic, and early language development, this game offers
+          endless fun wrapped in colorful, interactive experiences. Whether
+          you're a parent, teacher, or early learning specialist, Match It is a
+          joyful companion for children aged 3 and up.
+        </p>
+      </div>
+
+      <a
+        class="game-link game-link-desc"
+        href="https://play.google.com/store/apps/details?id=com.rayo.matchit&hl=en&gl=us"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          class="icon-google"
+          src="data:image/png;base64,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"
+          width="40"
+          height="40"
+          alt="google"
+        />
+        Download Free on Google Play
+      </a>
+    </div>
+    <!-- circle img -->
+    <picture class="hero-circle">
+      <!-- desktop -->
+      <source media="(min-width: 1200px)" srcset="/STP-9549/assets/desk-circle-CNmUmXEW.png" />
+      <!-- Mobile -->
+      <source media="(max-width: 1199px)" srcset="/STP-9549/assets/circles-BQF53eF6.png" />
+      <!-- Fullback image -->
+      <img src="/STP-9549/assets/desk-circle-CNmUmXEW.png" alt="Circle img" />
+    </picture>
   </div>
 </section>
 
@@ -296,12 +367,12 @@
     <!-- circle -->
     <picture class="features-circle">
       <!-- desktop -->
-      <source media="(min-width: 1200px)" srcset="/STP-9549/assets/desk-circles-CNmUmXEW.png" />
+      <source media="(min-width: 1200px)" srcset="/STP-9549/assets/desk-circle-CNmUmXEW.png" />
       <!-- Mobile -->
       <source media="(max-width: 1199px)" srcset="/STP-9549/assets/circles-BQF53eF6.png" />
 
       <!-- Fullback image -->
-      <img src="/STP-9549/assets/desk-circles-CNmUmXEW.png" alt="Circle img" />
+      <img src="/STP-9549/assets/desk-circle-CNmUmXEW.png" alt="Circle img" />
     </picture>
   </div>
 </section>
