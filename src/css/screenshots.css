@@ -1,0 +1,61 @@
+.screenshots-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.container.screenshots-container {
+  padding: 0;
+}
+
+.swiper.screenshots-swiper {
+  padding: 24px 16px;
+  background-color: #eeffde;
+}
+
+.swiper-wrapper.screenshots-slide-wrapper {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+/* ПРИХОВУЄМО КНОПКИ ЗА ЗАМОВЧУВАННЯМ (ДЛЯ МОБІЛЬНИХ) */
+.swiper-button-prev::after,
+.swiper-button-next::after,
+.swiper-button-prev.slide-screen-prev-btn,
+.swiper-button-next.slide-screen-next-btn {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .swiper-button-prev.slide-screen-prev-btn,
+  .swiper-button-next.slide-screen-next-btn {
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .swiper-button-prev > .icon-slide,
+  .swiper-button-next > .icon-slide {
+    fill: #09604d;
+    width: 64px;
+    height: 64px;
+  }
+
+  .screenshots-title {
+    font-size: 64px;
+    line-height: 1.02;
+    text-align: unset;
+    margin-left: 491px;
+    width: 484px;
+  }
+
+  .swiper.screenshots-swiper {
+    padding: 60px 0;
+  }
+
+  .swiper-slide {
+    width: 394px;
+    height: 700px;
+  }
+}

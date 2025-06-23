@@ -138,10 +138,9 @@
   }
 
   .features-list {
-    display: flex;
     gap: 32px;
-    margin-bottom: 32px;
     align-items: flex-end;
+    margin-bottom: 0;
   }
 
   .features-item {
@@ -154,7 +153,7 @@
 
   .features-img-title::before {
     width: 2px;
-    height: 1087px;
+    height: 1081px;
     background-color: #09604d;
     top: calc(100% - 1px);
     left: 50%;
@@ -191,10 +190,10 @@
   .features-img-end::before {
     bottom: 14px;
     right: 81px;
-    width: 140px;
+    width: 159px;
     height: 2px;
     background-color: #09604d;
-    transform: rotate(-42deg);
+    transform: rotate(-26deg);
     transform-origin: bottom right;
   }
 
@@ -207,6 +206,6 @@
     position: absolute;
     left: 100px;
     bottom: 0;
-    top: calc(100% + 116px);
+    top: calc(100% + 106px);
   }
 }
