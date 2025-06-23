@@ -23,5 +23,8 @@
     <symbol id="icon-burger-menu" viewBox="0 0 32 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.3333" d="M4 8h24M4 16h24M4 24h24"></path>
     </symbol>
+    <symbol id="icon-back-link" viewBox="0 0 32 32">
+      <path fill="none" stroke="#094b3c" style="stroke: var(--color1, #094b3c)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M20 24l-8-8 8-8"></path>
+    </symbol>
   </defs>
 </svg>

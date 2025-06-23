@@ -1,0 +1,97 @@
+/* Cookies Policy */
+.container-cookies {
+  position: relative;
+border: 2px dashed #09604d;
+border-radius: 16px;
+width: 100%;
+   background-color: rgba(238, 255, 222, 0.6);
+  padding: 40px 20px;
+  overflow: visible;
+  }
+
+.overlay-cookies {
+  position: absolute;
+  top: -70px; 
+  right: 47px; 
+  width: 105px;
+  height: 105px;
+  z-index: 10;
+  pointer-events: none;
+  user-select: none;
+}
+
+.update-date {
+  display: block;
+}
+
+.title-subtitle{
+font-family: var(--font-family); 
+/* не змінюється шрифт без цього */
+color: #094B3C;
+font-weight: 600;
+font-size: 20px;
+line-height: 1.5;
+margin-bottom: 25px;
+}
+
+.title-subtitle-sub{
+font-weight: 500;
+line-height: 1;
+}
+
+.text-cookies{
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.87; 
+margin-bottom: 25px;
+}
+
+.list-cookies{
+font-size: 16px;
+line-height: 1.87; 
+margin-bottom: 25px;  
+list-style-type: disc; 
+padding-left: 20px;    
+}
+
+.item-cookies{
+font-weight: 500;
+line-height: 1;
+}
+
+.text-cookies li {
+  display: list-item; 
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.link-cookies {
+  color: #094B3C;
+  text-decoration: underline;
+}
+
+.link-cookies:hover {
+  color: #067B3A;
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+.container-cookies{
+ padding: 40px 58px;
+}
+
+.update-date {
+    display: inline;}
+
+.overlay-cookies {
+  left: 182px;  
+  width: 154px;
+  height: 154px;
+ top: -99px; 
+}
+
+.list-cookies{
+  padding-left: 30px;}
+}
+

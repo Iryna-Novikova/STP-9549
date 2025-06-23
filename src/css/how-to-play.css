@@ -1,0 +1,125 @@
+/* .about-container {
+  position: relative;
+  background-image: url('/img/circles.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left -16px bottom -64px;
+  z-index: 3;
+} */
+
+/* .about-container::after {
+  position: absolute;
+  background-image: url('/img/circles.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left bottom -64%;
+  z-index: 3;
+} */
+
+.how-play-title-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.how-play-title {
+  width: 192px;
+  text-align: center;
+}
+
+.how-play-img {
+  width: 60px;
+  height: 60px;
+}
+
+.how-play-text-box {
+  border: 1px solid #09604d;
+  border-radius: 16px 0 16px 16px;
+  padding: 16px 17px;
+  line-height: 1.63;
+  background-color: #eeffde;
+  position: relative;
+  z-index: 10;
+}
+
+.how-play-text-box::after {
+  position: absolute;
+  content: '';
+  width: 97px;
+  height: 1px;
+  background-color: #09604d;
+  top: 0;
+  right: 118px;
+  transform: rotate(156deg);
+  transform-origin: right top;
+  z-index: 3;
+}
+
+.how-play-circle {
+  position: absolute;
+  right: -25px;
+  bottom: -95px;
+  z-index: 2;
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .how-play-title-box {
+    gap: 94px;
+  }
+
+  .how-play-title {
+    width: 958px;
+    font-size: 64px;
+    line-height: 1.02;
+    text-align: right;
+  }
+
+  .how-play-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .how-play-text-box {
+    padding: 24px;
+    line-height: 1.5;
+    font-size: 20px;
+    width: 958px;
+  }
+
+  .how-play-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .how-play-text-box::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 55px;
+    width: 470px;
+    height: 2px;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    background-color: #09604d;
+  }
+
+  .how-play-circle {
+    display: none;
+  }
+
+  .how-play-text-box::after {
+    width: 133px;
+    height: 2px;
+    background-color: #09604d;
+    top: 0;
+    right: 0;
+    transform: rotate(149deg);
+    transform-origin: top right;
+    z-index: 1;
+  }
+}

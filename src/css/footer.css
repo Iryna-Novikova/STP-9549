@@ -1,43 +1,97 @@
-.nav {
+.footer > .container {
+  padding-top: 30px;
   display: flex;
-  justify-content: space-between;
-  margin-right: auto;
-  width: 100%;
-}
-.nav-logo {
-  display: inline-flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  text-align: center;
+  gap: 69px;
+  color: #eeffde;
+  background-image: url('/img/footer/mob-green-min.png'),
+    linear-gradient(to bottom right, #67ad56, #67ad56);
+  background-repeat: no-repeat;
+  background-position: top center, left 0 top 29px;
+  background-size: 320px, auto;
+  font-size: 20px;
+  line-height: 1;
 }
+
+.nav {
+  padding-top: 22px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #eeffde;
+  left: 0;
+  bottom: -34px;
+}
+
 .nav-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: center;
+  gap: 24px;
 }
+
 .nav-link {
-  position: relative;
-  display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+  transition: color 0.2s ease-in;
 }
-.nav-link:hover,
+
+.nav-link:hover {
+  color: #cceab6;
+}
+
 .nav-link:focus {
-  color: #747bff;
+  color: #aded7e;
 }
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+
+.footer-edlist {
+  word-wrap: break-word;
+  padding-bottom: 22px;
 }
-.nav-link.active::after {
-  background: #747bff;
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .footer > .container {
+    background-image: url('/img/footer/mob-green@2x-min.png'),
+      linear-gradient(to bottom right, #67ad56, #67ad56);
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .footer > .container {
+    padding-top: 71px;
+    background-image: url('/img/footer/desk-greenunion-min.png'),
+      linear-gradient(to bottom right, #67ad56, #67ad56);
+    background-size: 1200px auto;
+    background-position: top center, left 0 top 69px;
+    /* margin: 0 auto; */
+  }
+
+  .nav {
+    padding-top: 40px;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .footer-edlist {
+    padding-bottom: 40px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .footer > .container {
+      background-image: url('/img/footer/desk-greenunion@2x-min.png'),
+        linear-gradient(to bottom right, #67ad56, #67ad56);
+    }
+  }
 }
