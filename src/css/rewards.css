@@ -1,0 +1,79 @@
+.container-rewards {
+  background-image: url('/img/rewards/mob-fon-min.png');
+background-size: cover;
+      background-repeat: no-repeat; 
+      background-position: center center; 
+      padding: 60px 16px;
+}
+
+.title-rewards{
+text-align: center;
+margin-bottom: 24px;
+}
+.phone-image{
+  width: 288px;
+  margin-bottom: 24px;
+}
+
+.text-rewards {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.4;
+text-align: center;
+margin-bottom: 24px;
+}
+
+.finish-rewards{
+font-weight: 500;
+font-size: 20px;
+line-height: 1.4;
+text-align: center;
+}
+
+.list-rewards{
+line-height: 1.5;
+text-align: center;
+list-style-type: disc;
+padding-left: 20px;
+margin-bottom: 24px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: url('/img/rewards/mob-tel@2x-min.png');
+  }}
+
+@media (min-width: 1200px) {
+   .container-rewards {
+    background-image: url('/img/rewards/desk-fon-min.png');
+         }
+
+.title-rewards{
+font-size: 64px;
+line-height: 1.2;
+margin-bottom: 32px;}
+
+.text-rewards{
+font-size: 24px;
+line-height: 1;
+margin-bottom: 32px;
+}
+
+.list-rewards{
+font-size: 20px;
+margin-bottom: 32px;}
+
+.finish-rewards{
+line-height: 1.5;}
+
+.phone-image{
+  width: 526px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: url('/img/rewards/desk-fon@2x-min.png');
+    }
+  }
+}
+
+
+
