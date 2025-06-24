@@ -1,0 +1,111 @@
+.screenshots-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.container.screenshots-container {
+  padding: 0;
+}
+
+.swiper.screenshots-swiper {
+  padding: 24px 16px 58px;
+  background-color: #eeffde;
+  align-items: center;
+}
+
+.swiper-wrapper.screenshots-slide-wrapper {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+[data-screen-pagination] {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 288px;
+  bottom: 34px;
+}
+
+[data-pgntn-span] {
+  width: 10px;
+  height: 10px;
+  background-color: #95ce6c;
+  border-radius: 50%;
+}
+
+[data-active-dot='true'] {
+  background-color: #2eb20d;
+}
+
+/* ПРИХОВУЄМО КНОПКИ ЗА ЗАМОВЧУВАННЯМ (ДЛЯ МОБІЛЬНИХ) */
+.swiper-button-prev::after,
+.swiper-button-next::after,
+.swiper-button-prev.slide-screen-prev-btn,
+.swiper-button-next.slide-screen-next-btn {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .swiper-button-prev.slide-screen-prev-btn,
+  .swiper-button-next.slide-screen-next-btn {
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .swiper-button-prev.slide-screen-prev-btn {
+    left: 298px;
+  }
+
+  .swiper-button-next.slide-screen-next-btn {
+    right: 332px;
+  }
+
+  .swiper-button-prev.slide-screen-prev-btn:hover > .icon-slide,
+  .swiper-button-next.slide-screen-next-btn:hover > .icon-slide {
+    fill: #0a935c;
+  }
+
+  .swiper-button-prev.slide-screen-prev-btn:focus > .icon-slide,
+  .swiper-button-next.slide-screen-next-btn:focus > .icon-slide {
+    fill: #61ad7e;
+  }
+
+  .swiper-button-prev > .icon-slide,
+  .swiper-button-next > .icon-slide {
+    fill: #09604d;
+    width: 64px;
+    height: 64px;
+  }
+
+  .screenshots-title {
+    font-size: 64px;
+    line-height: 1.02;
+    text-align: unset;
+    margin-left: 491px;
+    width: 484px;
+  }
+
+  .swiper.screenshots-swiper {
+    padding: 60px 0;
+    align-items: center;
+  }
+
+  /* .swiper-slide {
+    width: 393px;
+    height: 698px;
+  } */
+  /* 
+  .swiper-slide-visible.swiper-slide-fully-visible {
+    width: 424px;
+    height: 754px;
+  } */
+
+  [data-screen-pagination] {
+    display: none;
+  }
+}
