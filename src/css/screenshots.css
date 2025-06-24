@@ -38,12 +38,6 @@
   background-color: #2eb20d;
 }
 
-.swiper-buttons.screen-swiper-buttons {
-  display: flex;
-  justify-content: space-between;
-  width: 579px;
-}
-
 /* ПРИХОВУЄМО КНОПКИ ЗА ЗАМОВЧУВАННЯМ (ДЛЯ МОБІЛЬНИХ) */
 .swiper-button-prev::after,
 .swiper-button-next::after,
@@ -56,10 +50,29 @@
   .swiper-button-prev.slide-screen-prev-btn,
   .swiper-button-next.slide-screen-next-btn {
     display: block;
+    position: absolute;
     width: 64px;
     height: 64px;
     background-color: transparent;
     border: none;
+  }
+
+  .swiper-button-prev.slide-screen-prev-btn {
+    left: 298px;
+  }
+
+  .swiper-button-next.slide-screen-next-btn {
+    right: 332px;
+  }
+
+  .swiper-button-prev.slide-screen-prev-btn:hover > .icon-slide,
+  .swiper-button-next.slide-screen-next-btn:hover > .icon-slide {
+    fill: #0a935c;
+  }
+
+  .swiper-button-prev.slide-screen-prev-btn:focus > .icon-slide,
+  .swiper-button-next.slide-screen-next-btn:focus > .icon-slide {
+    fill: #61ad7e;
   }
 
   .swiper-button-prev > .icon-slide,
@@ -79,12 +92,18 @@
 
   .swiper.screenshots-swiper {
     padding: 60px 0;
+    align-items: center;
   }
 
-  .swiper-slide {
-    width: 394px;
-    height: 700px;
-  }
+  /* .swiper-slide {
+    width: 393px;
+    height: 698px;
+  } */
+  /* 
+  .swiper-slide-visible.swiper-slide-fully-visible {
+    width: 424px;
+    height: 754px;
+  } */
 
   [data-screen-pagination] {
     display: none;

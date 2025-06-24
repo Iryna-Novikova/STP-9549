@@ -1,11 +1,12 @@
 // import Swiper JS
 import Swiper from 'swiper';
-// import { coverflowEffect } from 'swiper/modules';
+import { Navigation, EffectCoverflow} from 'swiper/modules';
+// coverflowEffect
 // import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-// import 'swiper/css/effect-coverflow';
+import 'swiper/css/effect-coverflow';
 
 const refer = {
     swiperScreenElm: document.querySelector('[data-screen-slide]'),
@@ -15,8 +16,6 @@ const refer = {
 }
 
 let swiperScreen;
- 
-// console.log(swiper);
 
 document.addEventListener('DOMContentLoaded', initScreenShotsSwiper);
 
@@ -27,9 +26,9 @@ function initScreenShotsSwiper() {
     }
 
     swiperScreen = new Swiper(refer.swiperScreenElm, {
+        modules: [Navigation, EffectCoverflow],
         loop: false,
         speed: 500,
-        spaceBetween: 20,
         observer: true,
         centeredSlides: true,
         grabCursor: true,
@@ -37,17 +36,30 @@ function initScreenShotsSwiper() {
         breakpoints: {
             0: {
                 slidesPerView: 1,
+                spaceBetween: 50,
             },
             1200: {
-              slidesPerView: 2.6,
-             spaceBetween: 96,
+              slidesPerView: 2.4,
+             spaceBetween: 126,
             },  
         },
-        // effect: 'coverflow',
-        // coverflowEffect: {
-        //   slideShadows: true,
+
+        effect: 'coverflow',
+        coverflowEffect: {
+          slideShadows: false,
         //   scale: 1.08,
-        // },
+            rotate: 10,
+        //     style: {
+        //         width: 394,
+        //   }
+        },
+        
+  navigation: {
+    nextEl: refer.screenNextBtnElm,
+    prevEl: refer.screenPrevBtnElm,
+    disabledClass: 'swiper-button-disabled',
+  },
+
        
     on: {
          slideChange: updateSlide,
@@ -56,14 +68,7 @@ function initScreenShotsSwiper() {
 });
 
     initPagination(swiperScreen.slides.length, swiperScreen.activeIndex);  
-    initPaginationSlide();   
 }
-
-// function renderDots(active) { 
-//     return `
-//     <span class="pgntn-dot" data-active-dot=${active} >
-//     </span>`;
-// }
 
 function initPagination(totalDots, active) {
     // console.log(totalDots, '' , active);   
@@ -75,20 +80,6 @@ function initPagination(totalDots, active) {
       </span>`  ;
     }
     refer.paginationScreenElm.innerHTML = dots;   
-}
-
-function initPaginationSlide() {
-    refer.screenNextBtnElm.addEventListener('click', () => {
-        if (swiperScreen) {
-            swiperScreen.slideNext();
-        };
-    });
-
-    refer.screenPrevBtnElm.addEventListener('click', () => {
-        if (swiperScreen) {
-            swiperScreen.slidePrev();
-        };
-    });
 }
 
 function updateSlide() {
