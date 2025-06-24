@@ -1,0 +1,103 @@
+.testimon-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.swiper-slide.testimon-slide {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: #eeffde;
+  color: #585858;
+  border-radius: 16px;
+  min-height: 537px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Horizontal borders*/
+.swiper-slide.testimon-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 2px;
+  border-radius: 16px;
+  background:
+      /* TOP */ repeating-linear-gradient(
+        to right,
+        #09604d 0,
+        #09604d 16px,
+        transparent 16px,
+        transparent 32px
+      )
+      top/100% 2px no-repeat,
+    /* Bottom */
+      repeating-linear-gradient(
+        to right,
+        #09604d 0,
+        #09604d 16px,
+        transparent 16px,
+        transparent 32px
+      )
+      bottom/100% 2px no-repeat;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Vertical borders*/
+.swiper-slide.testimon-slide::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 2px;
+  border-radius: 16px;
+  background:
+      /* Left */ repeating-linear-gradient(
+        to bottom,
+        #09604d 0,
+        #09604d 16px,
+        transparent 16px,
+        transparent 32px
+      )
+      left/2px 100% no-repeat,
+    /* Right */
+      repeating-linear-gradient(
+        to bottom,
+        #09604d 0,
+        #09604d 16px,
+        transparent 16px,
+        transparent 32px
+      )
+      right/2px 100% no-repeat;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.testimon-card-img {
+  width: 111px;
+  height: 111px;
+  margin: 0 auto 16px;
+}
+
+.testimon-card-name-set {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.testimon-card-text {
+  width: 100%;
+}
+
+/* ПРИХОВУЄМО КНОПКИ ЗА ЗАМОВЧУВАННЯМ (ДЛЯ МОБІЛЬНИХ) */
+.swiper-button-prev::after,
+.swiper-button-next::after,
+.swiper-button-prev.slide-testimon-prev-btn,
+.swiper-button-next.slide-testimon-next-btn {
+  display: none;
+}
