@@ -3,3 +3,4 @@ import './js/screenshots';
 import './js/testimonials';
 import './js/testimonials';
 import './js/faq';
+import './js/pop';
