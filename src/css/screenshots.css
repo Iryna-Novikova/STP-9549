@@ -10,6 +10,7 @@
 .swiper.screenshots-swiper {
   padding: 24px 16px 58px;
   background-color: #eeffde;
+  align-items: center;
 }
 
 .swiper-wrapper.screenshots-slide-wrapper {
@@ -35,6 +36,12 @@
 
 [data-active-dot='true'] {
   background-color: #2eb20d;
+}
+
+.swiper-buttons.screen-swiper-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 579px;
 }
 
 /* ПРИХОВУЄМО КНОПКИ ЗА ЗАМОВЧУВАННЯМ (ДЛЯ МОБІЛЬНИХ) */
