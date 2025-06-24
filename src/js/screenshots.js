@@ -45,8 +45,9 @@ function initScreenShotsSwiper() {
 
         effect: 'coverflow',
         coverflowEffect: {
-          slideShadows: false,
-        //   scale: 1.08,
+            slideShadows: false,
+            modifier: 1.08,
+          scale: 1.08,
             rotate: 10,
         //     style: {
         //         width: 394,
