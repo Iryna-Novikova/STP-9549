@@ -1,7 +1,6 @@
 // import Swiper JS
 import Swiper from 'swiper';
 import { Navigation, EffectCoverflow} from 'swiper/modules';
-// coverflowEffect
 // import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
