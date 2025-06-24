@@ -48,35 +48,61 @@ function initScreenShotsSwiper() {
         //   slideShadows: true,
         //   scale: 1.08,
         // },
-    
-    //     //   Навігація
-    //   navigation: {
-    //     nextEl: refer.screenNextBtnElm,
-    //     prevEl: refer.screenPrevBtnElm,
-    //   },
-    
-    // //   Пагінація
-    //   pagination: {
-    //     el: refer.paginationScreenElm,
-    //     clickable: true,
-    //     type: 'bullets',
-    //   },
-    
+       
     on: {
          slideChange: updateSlide,
          init: updateSlide,
         }
 });
 
-    initPagination(swiperScreen.slides.length);
-    console.log(swiperScreen.slides.length);
-    
+    initPagination(swiperScreen.slides.length, swiperScreen.activeIndex);  
+    initPaginationSlide();   
 }
 
-function initPagination(totalSlides) {
+// function renderDots(active) { 
+//     return `
+//     <span class="pgntn-dot" data-active-dot=${active} >
+//     </span>`;
+// }
 
+function initPagination(totalDots, active) {
+    // console.log(totalDots, '' , active);   
+    refer.paginationScreenElm.innerHTML = '';
+    let dots='';
+    for (let i = 0; i < totalDots; i++) {
+        dots += ` 
+      <span class="pgntn-dot" data-pgntn-span data-active-dot='${i === active}' >
+      </span>`  ;
+    }
+    refer.paginationScreenElm.innerHTML = dots;   
+}
+
+function initPaginationSlide() {
+    refer.screenNextBtnElm.addEventListener('click', () => {
+        if (swiperScreen) {
+            swiperScreen.slideNext();
+        };
+    });
+
+    refer.screenPrevBtnElm.addEventListener('click', () => {
+        if (swiperScreen) {
+            swiperScreen.slidePrev();
+        };
+    });
 }
 
 function updateSlide() {
-    
-}
+    if (!swiperScreen || swiperScreen.slides.length === 0) return;
+    const dotsElm = document.querySelectorAll('[data-pgntn-span]');
+    const activeIndex = swiperScreen.activeIndex;
+    dotsElm.forEach((dotElm) => { dotElm.dataset.activeDot = 'false' });
+    dotsElm[activeIndex].dataset.activeDot = 'true';
+    swiperScreen.isActive = true;
+
+    if (activeIndex === 0) {
+        refer.screenPrevBtnElm.classList.toggle('disabled');
+    }
+    if (activeIndex === swiperScreen.slides.length - 1) {
+        refer.screenNextBtnElm.classList.toggle('disabled');
+    }
+}    

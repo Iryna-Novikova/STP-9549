@@ -8,13 +8,33 @@
 }
 
 .swiper.screenshots-swiper {
-  padding: 24px 16px;
+  padding: 24px 16px 58px;
   background-color: #eeffde;
 }
 
 .swiper-wrapper.screenshots-slide-wrapper {
   display: flex;
   margin-bottom: 24px;
+}
+
+[data-screen-pagination] {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 288px;
+  bottom: 34px;
+}
+
+[data-pgntn-span] {
+  width: 10px;
+  height: 10px;
+  background-color: #95ce6c;
+  border-radius: 50%;
+}
+
+[data-active-dot='true'] {
+  background-color: #2eb20d;
 }
 
 /* ПРИХОВУЄМО КНОПКИ ЗА ЗАМОВЧУВАННЯМ (ДЛЯ МОБІЛЬНИХ) */
@@ -57,5 +77,9 @@
   .swiper-slide {
     width: 394px;
     height: 700px;
+  }
+
+  [data-screen-pagination] {
+    display: none;
   }
 }
