@@ -29,3 +29,6 @@
 @import url('./privacy-policy.css');
 @import url('./terms.css');
 @import url('./text-pages.css');
+
+/* pop-up */
+@import url('./pop.css');
