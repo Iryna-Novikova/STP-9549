@@ -95,16 +95,6 @@
     align-items: center;
   }
 
-  /* .swiper-slide {
-    width: 393px;
-    height: 698px;
-  } */
-  /* 
-  .swiper-slide-visible.swiper-slide-fully-visible {
-    width: 424px;
-    height: 754px;
-  } */
-
   [data-screen-pagination] {
     display: none;
   }

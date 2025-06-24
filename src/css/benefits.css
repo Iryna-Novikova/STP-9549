@@ -6,12 +6,78 @@
 }
 
 .benefits-border {
-  border: 2px dashed #09604d;
+  /* border: 2px dashed #09604d; */
   border-radius: 16px;
   width: 100%;
   background-color: #eeffde;
   /*   margin: 0 auto; */
   padding: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Horizontal borders*/
+.benefits-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 2px;
+  border-radius: 16px;
+  background:
+      /* TOP */ repeating-linear-gradient(
+        to right,
+        #09604d 0,
+        #09604d 16px,
+        transparent 16px,
+        transparent 32px
+      )
+      top/100% 2px no-repeat,
+    /* Bottom */
+      repeating-linear-gradient(
+        to right,
+        #09604d 0,
+        #09604d 16px,
+        transparent 16px,
+        transparent 32px
+      )
+      bottom/100% 2px no-repeat;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Vertical borders*/
+.benefits-border::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 2px;
+  border-radius: 16px;
+  background:
+      /* Left */ repeating-linear-gradient(
+        to bottom,
+        #09604d 0,
+        #09604d 16px,
+        transparent 16px,
+        transparent 32px
+      )
+      left/2px 100% no-repeat,
+    /* Right */
+      repeating-linear-gradient(
+        to bottom,
+        #09604d 0,
+        #09604d 16px,
+        transparent 16px,
+        transparent 32px
+      )
+      right/2px 100% no-repeat;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .benefits-description {
