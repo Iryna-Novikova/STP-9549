@@ -1,118 +1,167 @@
-.what-title{
-    margin-bottom: 24px;
-    text-align: center;
+.what-title {
+  margin-bottom: 24px;
+  text-align: center;
 }
 
-.what-text{
-font-weight: 500;
-font-size: 20px;
-line-height: 1.4;
-text-align: center;
-margin-bottom: 32px;
+.what-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 .what-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   justify-items: center;
   list-style: none;
   padding: 0;
   margin-bottom: 40px;
+}
+
+.what-item {
+  width: 136px;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
   position: relative;
 }
 
-.what-item{
- width: 136px;
- text-align: center;
- position: relative;
-  z-index: 1; 
- }
-
-.what-image{
-border: 1px solid #09604d ;
-border-radius: 50%;
-width: 136px;
-height: 136px;
-margin-bottom: 8px;
-position: relative;
-z-index: 2;
-}
-.what-item:last-child {
-  grid-column: 1 / -1;           
-  justify-self: center;          
-}
-
-.text-span{
-font-weight: 400;
-font-size: 16px;
-line-height: 1.25;
-}
-
-.what-text-bottom{
-font-weight: 500;
-font-size: 20px;
-line-height: 1.4;
-text-align: center;
-}
-
-/* 
-.what-item:nth-child(1)::after,
-.what-item:nth-child(3)::after,
-.what-item:nth-child(5)::after
- {
-  content: "";
-  position: absolute;
-  top: 68px;
-  left: -120px;
-  right: -70px;
-  height: 1px;
-  background-color: #09604d;
-  z-index: 0;
-  transform: translateX(100px); 
-}
-
-.what-item:nth-child(7)::after {
-  content: "";
-  position: absolute;
-  top: 68px;
-  left: -190px;
-  right: 0;
-  height: 1px;
-  background-color: #09604d;
-  z-index: 0;
-  transform: translateX(100px); 
+/* .what-image {
+  position: relative;
 } */
 
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1200px){
-.what-text{
-font-size: 24px;
-line-height: 0.75;
-margin-bottom: 24px;
-}
-.what-text-bottom{
- font-size: 24px;
-/* line-height: 0.75;  */
+.what-image > img {
+  border: 1px solid #09604d;
+  border-radius: 50%;
+  width: 136px;
+  height: 136px;
 }
 
-.text-span{
-font-size: 20px;
-line-height: 1.5;
+.what-item:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
 }
-.what-list {
+
+.what-text-bottom {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.what-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 68px;
+  left: 100%;
+  height: 1px;
+  width: 16px;
+  background-color: #09604d;
+  z-index: 10;
+}
+
+.what-item:nth-child(1)::before,
+.what-item:nth-child(3)::before,
+.what-item:nth-child(5)::before {
+  content: '';
+  position: absolute;
+  top: 68px;
+  left: -16px;
+  width: 16px;
+  height: 1px;
+  background-color: #09604d;
+  z-index: 10;
+}
+
+.what-item:last-child::before {
+  content: '';
+  position: absolute;
+  top: 68px;
+  left: -92px;
+  height: 1px;
+  width: 92px;
+  background-color: #09604d;
+  z-index: 10;
+  /* transform: translateX(100px); */
+}
+
+.what-item:last-child::after {
+  content: '';
+  position: absolute;
+  top: 68px;
+  left: 100%;
+  height: 1px;
+  width: 92px;
+  background-color: #09604d;
+  z-index: 10;
+  /* transform: translateX(100px); */
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .what-title {
+    font-size: 64px;
+    line-height: 1.02;
+  }
+
+  .what-text {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 24px;
+  }
+
+  .text-span {
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .what-list {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-    justify-content: center; 
+    justify-content: center;
+    text-align: center;
     margin-bottom: 48px;
   }
 
-.what-item{
+  .what-item {
     width: 230px;
-}
-.what-image{
+    gap: 24px;
+    align-items: center;
+  }
+
+  .what-image > img {
     width: 200px;
     height: 200px;
-}
+  }
+
+  .what-item:nth-child(1)::before,
+  .what-item:nth-child(3)::before,
+  .what-item:nth-child(5)::before,
+  .what-item:nth-child(4)::after,
+  .what-item:last-child::after,
+  .what-item:last-child::before {
+    display: none;
+  }
+
+  .what-item:nth-child(1)::after,
+  .what-item:nth-child(2)::after,
+  .what-item:nth-child(3)::after,
+  .what-item:nth-child(5)::after,
+  .what-item:nth-child(6)::after {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    left: calc(100% - 15px);
+    height: 1px;
+    width: 62px;
+    background-color: #09604d;
+  }
 }
