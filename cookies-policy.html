@@ -18,14 +18,14 @@
   <body>
     <main>
       <div class="section tp-section">
-      <div class="container">
+        <div class="container">
           <a class="back-link" href="./index.html">
             <svg class="back-link-icon" width="16" height="16">
               <use href="/STP-9549/assets/sprite-B-0PxPF3.svg#icon-back-link"></use>
             </svg>
             Go to Home
           </a>
-        
+
           <div class="container container-cookies">
             <picture class="overlay-cookies">
               <!-- Desktop -->
@@ -36,102 +36,161 @@
               <!-- Mobile -->
               <source
                 media="(max-width: 1199px)"
-                srcset="/img/mob-yellow-min.png"
+                srcset="data:image/png;base64,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"
               />
 
               <!-- Fullback image -->
               <img src="/STP-9549/assets/desk-yellow-min-ccvMDIut.png" alt="Flower" />
             </picture>
-            
-        <h1 class="main-title main-cookies">Cookies Policy</h1>
-<p class="text-cookies">
-  <strong class="title-subtitle">Last Updated:</strong>
-  <span class="update-date">2025-06-05</span>
-</p>
-                <p class="text-cookies">
-          This Cookies Policy explains what cookies are and how we use them.
-          You should read this policy to understand what types of cookies we use,
-          what data they collect, and how you can manage your preferences.
-        </p>
-        <p class="text-cookies">
-          Cookies do not typically contain personally identifiable information.
-          However, in some cases, personal data that we store about you may be linked
-          to information obtained from cookies. For more details, see our
-          <a href="./privacy-policy.html">Privacy Policy</a>.
-        </p>
 
-        <h2 class="title-subtitle">What Are Cookies?</h2>
-        <p class="text-cookies">
-          Cookies are small text files stored on your device when you visit a website.
-          They help websites function properly, remember preferences, and collect
-          analytical data.
-        </p>
+            <h1 class="main-title main-cookies">Cookies Policy</h1>
+            <p class="text-cookies">
+              <strong class="title-subtitle">Last Updated:</strong>
+              <span class="update-date">2025-06-05</span>
+            </p>
+            <p class="text-cookies">
+              This Cookies Policy explains what cookies are and how we use them.
+              You should read this policy to understand what types of cookies we
+              use, what data they collect, and how you can manage your
+              preferences.
+            </p>
+            <p class="text-cookies">
+              Cookies do not typically contain personally identifiable
+              information. However, in some cases, personal data that we store
+              about you may be linked to information obtained from cookies. For
+              more details, see our
+              <a href="./privacy-policy.html">Privacy Policy</a>.
+            </p>
 
-        <h2 class="title-subtitle">How We Use Cookies</h2>
-        <p class="text-cookies">We use cookies to:</p>
-        <ul class="list-cookies">
-          <li>Ensure the website functions correctly.</li>
-          <li>Analyze user behavior and improve website performance.</li>
-          <li>Personalize your experience and remember preferences.</li>
-        </ul>
+            <h2 class="title-subtitle">What Are Cookies?</h2>
+            <p class="text-cookies">
+              Cookies are small text files stored on your device when you visit
+              a website. They help websites function properly, remember
+              preferences, and collect analytical data.
+            </p>
 
-        <h2 class="title-subtitle">Types of Cookies We Use</h2>
-        <p class="text-cookies">
-          Cookies can be "session" or "persistent." Session cookies expire when you
-          close your browser, while persistent cookies remain stored until manually
-          deleted or they reach expiration.
-        </p>
-<ul class="list-cookies">
-        <li class="item-cookies">Necessary Cookies
-        <ul class="text-cookies">
-          <li><span>Type:</span> Session Cookies</li>
-          <li><span>Purpose:</span> Required for core website functions and security.</li>
-        </ul>
-</li>
-        <li class="item-cookies">Functional Cookies
-        <ul class="text-cookies">
-          <li><span>Type:</span> Persistent Cookies</li>
-          <li><span>Purpose:</span> Remember user preferences (e.g., language, login details).</li>
-        </ul>
-</li>
-        <li class="item-cookies">Analytics Cookies
-        <ul class="text-cookies">
-          <li><span>Type:</span> Persistent Cookies</li>
-          <li><span>Purpose:</span> Track user behavior and website performance using Google Analytics.</li>
-        </ul>
-</li>
-        <li class="item-cookies">Advertising Cookies
-        <ul class="text-cookies">
-          <li><span>Type:</span> Persistent Cookies</li>
-          <li><span>Purpose:</span> Show relevant ads based on your browsing behavior.</li>
-        </ul>
-        </li>
-</ul>
-        <h2 class="title-subtitle">Managing Cookies</h2>
-        <p class="text-cookies">You can manage your cookie preferences through your browser settings. If you disable cookies, some features of the website may not function properly.</p>
-        <ul class="list-cookies">
-          <li><a class="link-cookies" href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Manage cookies in Chrome</a></li>
-          <li><a class="link-cookies" href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" rel="noopener noreferrer">Manage cookies in Firefox</a></li>
-          <li><a class="link-cookies" href="https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d" target="_blank" rel="noopener noreferrer">Manage cookies in Internet Explorer</a></li>
-          <li><a class="link-cookies" href="https://support.apple.com/en-us/HT201265" target="_blank" rel="noopener noreferrer">Manage cookies in Safari</a></li>
-        </ul>
-        <h2 class="title-subtitle">Third-Party Cookies</h2>
-        <p class="text-cookies">
-          Some third-party services (e.g., Google Analytics, advertising networks) may use cookies to collect information.
-          These cookies are subject to their own privacy policies.
-        </p>
+            <h2 class="title-subtitle">How We Use Cookies</h2>
+            <p class="text-cookies">We use cookies to:</p>
+            <ul class="list-cookies">
+              <li>Ensure the website functions correctly.</li>
+              <li>Analyze user behavior and improve website performance.</li>
+              <li>Personalize your experience and remember preferences.</li>
+            </ul>
 
-        <h2 class="title-subtitle">Changes to This Policy</h2>
-        <p class="text-cookies">
-          We may update this Cookies Policy periodically. Significant changes will be communicated via the website.
-        </p>
+            <h2 class="title-subtitle">Types of Cookies We Use</h2>
+            <p class="text-cookies">
+              Cookies can be "session" or "persistent." Session cookies expire
+              when you close your browser, while persistent cookies remain
+              stored until manually deleted or they reach expiration.
+            </p>
+            <ul class="list-cookies">
+              <li class="item-cookies">
+                Necessary Cookies
+                <ul class="text-cookies">
+                  <li><span>Type:</span> Session Cookies</li>
+                  <li>
+                    <span>Purpose:</span> Required for core website functions
+                    and security.
+                  </li>
+                </ul>
+              </li>
+              <li class="item-cookies">
+                Functional Cookies
+                <ul class="text-cookies">
+                  <li><span>Type:</span> Persistent Cookies</li>
+                  <li>
+                    <span>Purpose:</span> Remember user preferences (e.g.,
+                    language, login details).
+                  </li>
+                </ul>
+              </li>
+              <li class="item-cookies">
+                Analytics Cookies
+                <ul class="text-cookies">
+                  <li><span>Type:</span> Persistent Cookies</li>
+                  <li>
+                    <span>Purpose:</span> Track user behavior and website
+                    performance using Google Analytics.
+                  </li>
+                </ul>
+              </li>
+              <li class="item-cookies">
+                Advertising Cookies
+                <ul class="text-cookies">
+                  <li><span>Type:</span> Persistent Cookies</li>
+                  <li>
+                    <span>Purpose:</span> Show relevant ads based on your
+                    browsing behavior.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <h2 class="title-subtitle">Managing Cookies</h2>
+            <p class="text-cookies">
+              You can manage your cookie preferences through your browser
+              settings. If you disable cookies, some features of the website may
+              not function properly.
+            </p>
+            <ul class="list-cookies">
+              <li>
+                <a
+                  class="link-cookies"
+                  href="https://support.google.com/chrome/answer/95647"
+                  target="_blank"
+                  rel="noopener"
+                  >Manage cookies in Chrome</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-cookies"
+                  href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Manage cookies in Firefox</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-cookies"
+                  href="https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Manage cookies in Internet Explorer</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-cookies"
+                  href="https://support.apple.com/en-us/HT201265"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Manage cookies in Safari</a
+                >
+              </li>
+            </ul>
+            <h2 class="title-subtitle">Third-Party Cookies</h2>
+            <p class="text-cookies">
+              Some third-party services (e.g., Google Analytics, advertising
+              networks) may use cookies to collect information. These cookies
+              are subject to their own privacy policies.
+            </p>
 
-        <h2 class="title-subtitle">Contact Us</h2>
-        <p class="text-cookies">
-          If you have any questions about this Cookies Policy, you can contact us at
-          <a class="link-cookies" href="mailto:info@educationqaga.space">info@educationqaga.space</a>.
-        </p>
-      </div>
+            <h2 class="title-subtitle">Changes to This Policy</h2>
+            <p class="text-cookies">
+              We may update this Cookies Policy periodically. Significant
+              changes will be communicated via the website.
+            </p>
+
+            <h2 class="title-subtitle">Contact Us</h2>
+            <p class="text-cookies">
+              If you have any questions about this Cookies Policy, you can
+              contact us at
+              <a class="link-cookies" href="mailto:info@educationqaga.space"
+                >info@educationqaga.space</a
+              >.
+            </p>
+          </div>
         </div>
       </div>
     </main>
