@@ -29,7 +29,6 @@ font-size: 20px;
 line-height: 1.4;
 text-align: center;
 }
-
 .list-rewards{
 line-height: 1.5;
 text-align: center;
@@ -37,18 +36,19 @@ list-style-type: disc;
 list-style-position: inside;
 /* padding-left: 20px; */
 margin-bottom: 24px;}
-
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .container-rewards {
     background-image: url('/img/rewards/mob-fon@2x-min.png');
   }
 }
 
-
 /* Styles for Desktop devices */
 @media (min-width: 1200px) {
    .container-rewards {
     background-image: url('/img/rewards/desk-fon-min.png');
+    /* background-size: cover;
+      background-repeat: no-repeat; 
+      background-position: center center;   */
       position: relative;
       overflow: hidden;
     padding: 80px 23px 80px 16px; 
@@ -84,14 +84,13 @@ font-size: 20px;
 margin-bottom: 32px;}
 .finish-rewards{
 line-height: 1.5;}
-}
-
 
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
        (min-width: 1200px) and (min-resolution: 192dpi) {
   .container-rewards {
     background-image: url(/img/rewards/desk-fon@2x-min.png);
   }
+}
 }
 
 
