@@ -10,6 +10,7 @@
   background-image: url('/img/hero/mob-bckgr-hero.webp');
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
   position: relative;
 }
 
