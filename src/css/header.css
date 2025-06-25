@@ -69,7 +69,8 @@ html {
 }
 /* Styles for burger-menu */
 .wrapper {
-  width: 228px;
+  width: 50%;
+  min-width: 228px;
   height: 100%;
   text-align: center;
   position: fixed;

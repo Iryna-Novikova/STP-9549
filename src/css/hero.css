@@ -1,0 +1,172 @@
+#hero {
+  padding-top: 92px;
+}
+
+.container.hero-container {
+  padding: 0;
+}
+
+.hero-container {
+  background-image: url('/img/hero/mob-bckgr-hero.webp');
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: relative;
+}
+
+.hero-info-box {
+  display: flex;
+  padding: 0 16px 43px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-iphone-img {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 37px;
+}
+
+.hero-title {
+  text-align: center;
+}
+
+.game-link {
+  display: flex;
+  border: 1px solid #09604d;
+  border-radius: 16px;
+  padding: 7px 12px;
+  gap: 8px;
+  line-height: 2.14;
+  color: #181818;
+  background-color: #eeffde;
+  font-size: 14px;
+  align-items: center;
+}
+
+.game-link:hover {
+  background-color: #cceab6;
+}
+
+.game-link:focus {
+  background-color: #aded7e;
+}
+
+.hero-p-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+}
+
+.hero-p {
+  line-height: 1.63;
+}
+
+.hero-circle {
+  position: absolute;
+  right: 0;
+  top: calc(100% - 70px);
+}
+
+.game-link-desc {
+  visibility: hidden;
+  display: none;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: url('/img/hero/mob-bckgr-hero@2x.webp');
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #hero {
+    padding-top: 114px;
+  }
+
+  .hero-container {
+    background-image: url('/img/hero/desk-bckgr-hero.webp');
+    background-position: top left;
+    /* background-size: cover; */
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .container.hero-container {
+    box-sizing: border-box;
+    padding: 68px 104px 124px 24px;
+  }
+
+  .hero-iphone-img > img {
+    width: 595px;
+    height: 734px;
+  }
+
+  .hero-iphone-img {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    padding: 0;
+  }
+
+  .hero-info-box {
+    display: flex;
+    padding: 0;
+    gap: 40px;
+    width: 500px;
+    margin-bottom: 72px;
+  }
+
+  .hero-title {
+    font-size: 64px;
+    line-height: 1.02;
+  }
+
+  .hero-p-title {
+    font-size: 30px;
+    line-height: 1.17;
+  }
+
+  .hero-p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .game-link-desc {
+    visibility: visible;
+    display: flex;
+  }
+
+  .game-link-mob {
+    visibility: hidden;
+    display: none;
+  }
+
+  .game-link {
+    padding: 17px;
+    gap: 11px;
+    line-height: 1.25;
+    font-size: 24px;
+    width: 452px;
+    height: 75px;
+    margin: 0 auto;
+  }
+
+  .hero-circle > img {
+    width: 266px;
+    height: 291px;
+  }
+
+  .hero-circle {
+    right: 0;
+    top: calc(100% - 146px);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: url('/img/hero/desk-bckgr-hero@2x.webp');
+    }
+  }
+}

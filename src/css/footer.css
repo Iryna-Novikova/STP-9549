@@ -1,3 +1,7 @@
+.footer.section {
+  margin-bottom: 0;
+}
+
 .footer > .container {
   padding-top: 30px;
   display: flex;

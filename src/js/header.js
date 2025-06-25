@@ -16,3 +16,10 @@ burgerNavListElm.addEventListener('click', e => {
       burgerMenuEl.dataset.visible = 'close';  
     }
 });
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1199) { 
+    burgerMenuEl.dataset.visible = 'close';  
+  }
+})
+
