@@ -56,6 +56,7 @@
 .pp-link {
   color: #094b3c;
   text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
 .pp-link:hover {

@@ -31,7 +31,11 @@ gap: 16px;
 
 .icon {
     fill: none;
-    stroke: #094B3C
+    stroke: #094B3C;
+    transition: transform 0.3s ease;
+}
+.icon:hover {
+  transform: scale(1.2); 
 }
 
 /* Styles for Desktop devices */

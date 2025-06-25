@@ -12,6 +12,7 @@
   border-radius: 16px;
   text-align: center;
   overflow: hidden;
+  animation: slide 0.3s ease;
 }
 
 /* Horizontal borders*/

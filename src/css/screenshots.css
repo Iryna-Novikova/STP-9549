@@ -12,6 +12,9 @@
   background-color: #eeffde;
   align-items: center;
 }
+.swiper-slide-active {
+  animation: stretch 0.3s ease;
+}
 
 .swiper-wrapper.screenshots-slide-wrapper {
   display: flex;
@@ -32,6 +35,7 @@
   height: 10px;
   background-color: #95ce6c;
   border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 [data-active-dot='true'] {

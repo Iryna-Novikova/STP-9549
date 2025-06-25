@@ -44,6 +44,7 @@
   background-color: #eeffde;
   font-size: 14px;
   align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 .game-link:hover {

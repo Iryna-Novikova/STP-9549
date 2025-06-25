@@ -64,11 +64,12 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-}
+  }
 
 .link-cookies {
   color: #094b3c;
   text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
 .link-cookies:hover {

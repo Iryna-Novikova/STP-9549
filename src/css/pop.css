@@ -48,11 +48,12 @@ border: none;
 font-size: 20px;
 line-height: 1;
 color: #094b3c;
+ transition: background-color 0.3s ease;
 }
 
 .btn-accept {
   background-color: #EEFFDE;
-  }
+   }
 
 .btn-accept:hover {
   background-color: #cceab6;
