@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 40px 16px 50px;
+  padding: 40px 16px 47px;
 }
 
 .title-rewards {
@@ -34,16 +34,18 @@
   line-height: 1.5;
   text-align: center;
   list-style-type: disc;
-  padding-left: 20px;
+  list-style-position: inside;
+  /* padding-left: 20px; */
   margin-bottom: 24px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .hero-container {
-    background-image: url('/img/rewards/mob-tel@2x-min.png');
+  .container-rewards {
+    background-image: url('/img/rewards/mob-fon@2x-min.png');
   }
 }
 
+/* Styles for Desktop devices */
 @media (min-width: 1200px) {
   .container-rewards {
     background-image: url('/img/rewards/desk-fon-min.png');
@@ -56,35 +58,6 @@
     gap: 32px;
   }
 
-  .title-rewards {
-    display: block;
-    font-size: 64px;
-    line-height: 1.02;
-    margin-bottom: 0;
-    width: 663px;
-  }
-
-  .text-rewards {
-    display: block;
-    width: 663px;
-    font-size: 24px;
-    line-height: 1;
-    margin-bottom: 0;
-  }
-
-  .list-rewards {
-    width: 663px;
-    font-size: 20px;
-    padding-left: 60px;
-    align-items: center;
-    margin-bottom: 0;
-  }
-
-  .finish-rewards {
-    display: block;
-    width: 663px;
-    line-height: 1.5;
-  }
   .reward-phone-box {
     position: absolute;
     bottom: 38px;
@@ -99,9 +72,38 @@
     margin-bottom: 0;
   }
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .hero-container {
-      background-image: url('/img/rewards/desk-fon@2x-min.png');
+  .title-rewards,
+  .text-rewards,
+  .list-rewards,
+  .finish-rewards {
+    width: 663px;
+  }
+
+  .title-rewards {
+    font-size: 64px;
+    line-height: 1.02;
+    margin-bottom: 0;
+  }
+
+  .text-rewards {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  .list-rewards {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .finish-rewards {
+    line-height: 1.5;
+  }
+
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    (min-width: 1200px) and (min-resolution: 192dpi) {
+    .container-rewards {
+      background-image: url(/img/rewards/desk-fon@2x-min.png);
     }
   }
 }
