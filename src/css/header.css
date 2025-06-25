@@ -68,9 +68,8 @@ html {
   stroke: #aded7e;
 }
 /* Styles for burger-menu */
-.wrapper {
-  width: 50%;
-  min-width: 228px;
+.burger-menu-wrapper {
+  width: 288px;
   height: 100%;
   text-align: center;
   position: fixed;
@@ -98,7 +97,7 @@ html {
   right: 11px;
   width: 30px;
   height: 30px;
-  padding: 6px;
+  padding: 3px;
   border: none;
   background: none;
   color: inherit;
@@ -118,6 +117,12 @@ html {
 
 [data-visible='close'] {
   display: none;
+}
+
+@media only screen and (min-width: 376px) {
+  .burger-menu-wrapper {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 1200px) {

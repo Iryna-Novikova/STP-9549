@@ -9,7 +9,7 @@
 .hero-container {
   background-image: url('/img/hero/mob-bckgr-hero.webp');
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: top center;
   position: relative;
 }
 
