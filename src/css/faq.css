@@ -85,6 +85,7 @@ width: 34px;
 height: 34px;
 bottom: -10px;
 cursor: pointer;
+transition: transform 0.3s ease;
 }
 
 .icon-faq.open {
@@ -112,6 +113,7 @@ text-align: center;
     width: 100%;
     /* width: 255px; */
     padding-bottom: 23px;
+    animation: stretch 0.3s ease;
 }
 
 @media only screen and (min-width: 1200px) {
