@@ -32,6 +32,8 @@
 .how-play-img {
   width: 60px;
   height: 60px;
+  position: relative;
+  z-index: 20;
 }
 
 .how-play-text-box {
@@ -110,6 +112,21 @@
 
   .how-play-circle {
     display: none;
+  }
+
+  .how-container {
+    position: relative;
+  }
+
+  .how-circle-after {
+    position: absolute;
+    width: 208px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    bottom: -305px;
+    left: 0;
   }
 
   .how-play-text-box::after {

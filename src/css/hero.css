@@ -12,6 +12,7 @@
   background-position: top center;
   background-size: cover;
   position: relative;
+  z-index: 100;
 }
 
 .hero-info-box {
@@ -35,6 +36,7 @@
 
 .game-link {
   display: flex;
+  position: relative;
   border: 1px solid #09604d;
   border-radius: 16px;
   padding: 7px 12px;
@@ -44,6 +46,7 @@
   background-color: #eeffde;
   font-size: 14px;
   align-items: center;
+  z-index: 100;
 }
 
 .game-link:hover {
@@ -69,6 +72,7 @@
   position: absolute;
   right: 0;
   top: calc(100% - 70px);
+  z-index: 5;
 }
 
 .game-link-desc {

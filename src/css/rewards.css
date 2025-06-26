@@ -4,11 +4,15 @@
   background-repeat: no-repeat;
   background-position: center center;
   padding: 40px 16px 47px;
+  position: relative;
+  z-index: 5;
 }
 
 .title-rewards {
   text-align: center;
   margin-bottom: 24px;
+  z-index: 9;
+  position: relative;
 }
 .phone-image {
   width: 288px;
@@ -37,6 +41,23 @@
   list-style-position: inside;
   /* padding-left: 20px; */
   margin-bottom: 24px;
+}
+
+.rewards-circle-before {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  z-index: 0;
+}
+
+.rewards-circle-after {
+  position: absolute;
+  bottom: -65px;
+  right: 0px;
+  z-index: 0;
+  height: 110px;
+  width: 88px;
+  overflow: hidden;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -98,6 +119,27 @@
 
   .finish-rewards {
     line-height: 1.5;
+  }
+
+  .img-circle {
+    display: block;
+    width: 230px;
+    height: 291px;
+    object-fit: contain;
+  }
+
+  .rewards-circle-before {
+    width: 155px;
+    height: 291px;
+    top: -239px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .rewards-circle-after {
+    display: none;
   }
 
   @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),

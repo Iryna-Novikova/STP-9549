@@ -96,6 +96,31 @@
   left: 100%;
 }
 
+.container-for {
+  position: relative;
+}
+
+.for-circle-before {
+  position: absolute;
+  left: 0;
+  top: -70px;
+  width: 50px;
+  height: 79px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.for-circle-after {
+  position: absolute;
+  width: 100px;
+  height: 110px;
+  right: 0;
+  bottom: -90px;
+  overflow: hidden;
+}
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
   .for-title {
@@ -160,5 +185,40 @@
 
   .final-text {
     font-size: 24px;
+  }
+
+  .for-circle-before {
+    position: absolute;
+    left: calc(100% - 290px);
+    /* right: -24px; */
+    top: -100px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .for-circle-before > img,
+  .for-circle-before > img {
+    width: 290px;
+    height: 290px;
+  }
+
+  .ft-br-mob {
+    display: none;
+  }
+
+  .for-circle-after {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    right: auto;
+    left: 10px;
+    bottom: 80px;
+    overflow: hidden;
   }
 }
