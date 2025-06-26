@@ -94,9 +94,9 @@ function updateSlide() {
   swiperScreen.isActive = true;
 
   if (activeIndex === 0) {
-    refer.screenPrevBtnElm.classList.toggle('disabled');
+    refer.screenPrevBtnElm.disabled = true;
   }
   if (activeIndex === swiperScreen.slides.length - 1) {
-    refer.screenNextBtnElm.classList.toggle('disabled');
+    refer.screenNextBtnElm.disabled = true;
   }
 }
