@@ -102,6 +102,30 @@
   /* transform: translateX(100px); */
 }
 
+.what-container {
+  position: relative;
+}
+
+.what-cirle-before > img,
+.what-cirle-after > img {
+  width: 104px;
+  height: 110px;
+}
+
+.what-cirle-before {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: -16px;
+}
+
+.what-cirle-after {
+  position: absolute;
+  z-index: 10;
+  bottom: 179px;
+  right: 52px;
+}
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
   .what-title {
