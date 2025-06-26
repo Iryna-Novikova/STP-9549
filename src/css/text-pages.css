@@ -123,9 +123,24 @@
 
 .text-cookies li {
   display: list-item;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
+  /* font-size: 20px; */
+}
+
+.item-cookies-main,
+.text-cookies > li {
+  margin-bottom: 15px;
+}
+
+.text-cookies-type {
+  line-height: 0.9;
+}
+
+.text-cookies-purpose {
+  line-height: 1.1;
+}
+
+.text-cookies.last {
+  margin-bottom: 0;
 }
 
 .link-cookies {
@@ -135,6 +150,22 @@
 
 .link-cookies:hover {
   color: #067b3a;
+}
+
+.cookies-circle-after {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: -90px;
+  right: 20px;
+}
+
+.cookies-circle-before {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 0;
+  bottom: -50px;
 }
 
 /* Styles for Desktop devices */
@@ -156,5 +187,21 @@
 
   .list-cookies {
     padding-left: 30px;
+  }
+
+  .cookies-circle-after {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    top: -130px;
+    right: 80px;
+  }
+
+  .cookies-circle-before {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    left: -22px;
+    bottom: -200px;
   }
 }
