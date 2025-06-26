@@ -1,5 +1,6 @@
 .container.faq-container {
   padding: 0;
+  position: relative;
 }
 
 .faq-title {
@@ -114,6 +115,18 @@
   width: 100%;
   padding-bottom: 23px;
   animation: stretch 0.3s ease;
+}
+
+.faq-circle-after {
+  position: absolute;
+  width: 86px;
+  height: 82px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+  bottom: -82px;
+  left: 0;
 }
 
 @media only screen and (min-width: 1200px) {

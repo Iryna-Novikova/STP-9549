@@ -1,60 +1,101 @@
-.title-contact{
-    text-align: center;
-margin-bottom: 24px;}
-
-.text-contact{
-font-weight: 500;
-font-size: 20px;
-line-height: 1.4;
-text-align: center;
-margin-bottom: 16px;
+.title-contact {
+  text-align: center;
+  margin-bottom: 24px;
 }
 
-.contact-info{
-line-height: 1.25;
-text-align: center;
-display: flex;
-flex-direction: column;
-gap: 16px;
+.text-contact {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.contact-info {
+  line-height: 1.25;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .contact-info li {
   display: flex;
   width: 100%;
-  flex-direction: column; 
-  align-items: center;    
-  gap: 8px;               
-/*   margin-bottom: 16px; */
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  /*   margin-bottom: 16px; */
   text-align: center;
   justify-content: center;
 }
 
 .icon {
-    fill: none;
-    stroke: #094B3C
+  fill: none;
+  stroke: #094b3c;
+}
+
+.contact-container {
+  position: relative;
+}
+
+.contact-circle-before {
+  display: none;
+}
+
+.contact-circle-after {
+  position: absolute;
+  width: 80px;
+  height: 83px;
+  overflow: hidden;
+  right: 0;
+  bottom: -83px;
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
-.title-contact{
-font-size: 64px;
-line-height: 1.02;}
+  .title-contact {
+    font-size: 64px;
+    line-height: 1.02;
+  }
 
-.text-contact{
-font-size: 30px;
-line-height: 0.67;
-margin-bottom: 64px;
-}
-.contact-info{
-font-weight: 500;
-font-size: 20px;
-line-height: 1.5;
-gap: 16;
-  align-items: center;      
-  justify-content: center; }
+  .text-contact {
+    font-size: 30px;
+    line-height: 0.67;
+    margin-bottom: 64px;
+  }
+  .contact-info {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    gap: 16;
+    align-items: center;
+    justify-content: center;
+  }
 
-.contact-info li {
-  flex-direction: row;    
-  width: 621px;
+  .contact-info li {
+    flex-direction: row;
+    width: 621px;
+  }
+
+  .contact-circle-after {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    right: auto;
+    left: 15px;
+    bottom: -270px;
+  }
+
+  .img-circle {
+    width: 290px;
+  }
+
+  .contact-circle-before {
+    position: absolute;
+    width:162px; 
+    overflow: hidden;
+    
   }
 }

@@ -1,18 +1,51 @@
 <section class="section" id="contacts">
-  <div class="container">
+  <div class="container contact-container">
     <h2 class="title-contact">Contact us</h2>
-    <p class="text-contact">Have questions, feedback, or partnership inquiries?</p>
+    <p class="text-contact">
+      Have questions, feedback, or partnership inquiries?
+    </p>
 
     <ul class="contact-info">
-           <li><svg class="icon" width="24" height="24">
-   <use href="img/sprite.svg#icon-mail"></use>
-</svg> 
- <a href="mailto:info@educationqaga.space">Email:info@educationqaga.space</a>
+      <li>
+        <svg class="icon" width="24" height="24">
+          <use href="img/sprite.svg#icon-mail"></use>
+        </svg>
+        <a href="mailto:info@educationqaga.space"
+          >Email:info@educationqaga.space</a
+        >
       </li>
-      <li><svg class="icon" width="24" height="24">
-      <use href="/img/sprite.svg#icon-map"></use>
-    </svg>
-    Business Hours: Monday–Friday, 9:00 AM – 5:00 PM (UTC)</li>
+      <li>
+        <svg class="icon" width="24" height="24">
+          <use href="/img/sprite.svg#icon-map"></use>
+        </svg>
+        Business Hours: Monday–Friday, 9:00 AM – 5:00 PM (UTC)
+      </li>
     </ul>
+
+    <!-- circle  before -->
+    <picture class="contact-circle-before">
+      <source
+        media="(min-width: 1200px)"
+        srcset="/img/circles.png 1x, /img/desk-circles@2x.png 2x"
+      />
+      <source
+        media="(max-width: 1199px)"
+        srcset="/img/circles.png 1x, /img/mob-circles@2x.png 2x"
+      />
+      <img class="img-circle" src="/img/desk-circles.png" alt="Circle img" />
+    </picture>
+
+    <!-- circle  after-->
+    <picture class="contact-circle-after">
+      <source
+        media="(min-width: 1200px)"
+        srcset="/img/circles.png 1x, /img/desk-circles@2x.png 2x"
+      />
+      <source
+        media="(max-width: 1199px)"
+        srcset="/img/circles.png 1x, /img/mob-circles@2x.png 2x"
+      />
+      <img class="img-circle" src="/img/desk-circles.png" alt="Circle img" />
+    </picture>
   </div>
 </section>
