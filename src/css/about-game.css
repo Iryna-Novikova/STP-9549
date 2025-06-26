@@ -32,6 +32,8 @@
 .about-img {
   width: 60px;
   height: 60px;
+  position: relative;
+  z-index: 20;
 }
 
 .about-text-box {

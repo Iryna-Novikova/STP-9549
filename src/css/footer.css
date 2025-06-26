@@ -17,6 +17,8 @@
   background-size: 320px, auto;
   font-size: 20px;
   line-height: 1;
+  position: relative;
+  z-index: 3;
 }
 
 .nav {
