@@ -50,6 +50,15 @@
   overflow: hidden;
   right: 0;
   bottom: -83px;
+  transition: color 0.3s ease;
+}
+
+.contact-mail-link:hover {
+  color: #0a935c;
+}
+
+.contact-mail-link:focus {
+  color: #61ad7e;
 }
 
 /* Styles for Desktop devices */

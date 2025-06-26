@@ -115,6 +115,11 @@
   bottom: -55px;
 }
 
+.features-item:hover,
+.features-item:focus {
+  box-shadow: 0 0 10px 1px #48aa00;
+}
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
   .features-title-box {
@@ -153,11 +158,6 @@
     line-height: 1.5;
     box-shadow: none;
     transition: boxshadow 0.3s ease-out;
-  }
-
-  .features-item:hover,
-  .features-item:focus {
-    box-shadow: 0 0 10px 1px #48aa00;
   }
 
   .features-img-title::before {
