@@ -151,6 +151,13 @@
     padding: 16px 24px;
     font-size: 20px;
     line-height: 1.5;
+    box-shadow: none;
+    transition: boxshadow 0.3s ease-out;
+  }
+
+  .features-item:hover,
+  .features-item:focus {
+    box-shadow: 0 0 10px 1px #48aa00;
   }
 
   .features-img-title::before {
