@@ -6,7 +6,30 @@
   text-align: left;
   align-items: center;
   height: 20px;
+  width: 117px;
+  transition: color 0.3s ease;
 }
+
+.back-link:hover {
+  color: #0a935c;
+}
+
+.back-link:focus {
+  color: #61ad7e;
+}
+
+.back-link-icon {
+  --color1: #094b3c;
+  transition: stroke 0.3s ease, --color1 0.3s ease;
+}
+/* Hover ефект на всю лінку */
+.back-link:hover .back-link-icon {
+  --color1: #0a935c;
+}
+.back-link:focus .back-link-icon {
+  --color1: #61ad7e;
+}
+
 /* .back-link::before {
   content: '';
   position: absolute;
