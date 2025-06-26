@@ -112,27 +112,31 @@
   padding-left: 20px;
 }
 
-.terms-circle-after{
+.terms-circle-after {
   position: absolute;
   width: 75px;
   height: 75px;
-  top:  -100px;
+  top: -100px;
   right: 20px;
 }
 
-.terms-circle-before{
-position: absolute;
+.terms-circle-before {
+  position: absolute;
   width: 75px;
   height: 75px;
   left: 5px;
   bottom: -48px;
 }
 
+.tp-section {
+  margin-bottom: 80px;
+}
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
-  /* .tp-section {
-    padding-top: 100px;
-  } */
+  .tp-section {
+    margin-bottom: 52px;
+  }
 
   .container-terms {
     /* width: 1152px; */
@@ -166,21 +170,21 @@ position: absolute;
   .list-terms {
     padding-left: 30px;
   }
-  .terms-circle-after{
-  position: absolute;
-  width: 230px;
-  height: 230px;
-  top:  -140px;
-  right: auto;
-  left: 170px;
-}
+  .terms-circle-after {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    top: -140px;
+    right: auto;
+    left: 170px;
+  }
 
-.terms-circle-before{
-position: absolute;
-  width: 230px;
-  height: 230px;
-  left: auto;
-  right: 58px;
-  bottom: -114px;
-}
+  .terms-circle-before {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    left: auto;
+    right: 58px;
+    bottom: -114px;
+  }
 }
