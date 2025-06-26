@@ -115,14 +115,14 @@ html {
   display: flex;
 }
 
-[data-visible='close'] {
-  display: none;
-}
-
 @media only screen and (min-width: 376px) {
   .burger-menu-wrapper {
-    width: 50%;
+    width: 50%vw;
   }
+}
+
+[data-visible='close'] {
+  display: none;
 }
 
 @media only screen and (min-width: 1200px) {
