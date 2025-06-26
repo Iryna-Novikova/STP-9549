@@ -1,0 +1,4 @@
+.img-circle-anim {
+  scale: 1;
+  animation: circle-pulse 3s ease-in-out infinite;
+}

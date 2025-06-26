@@ -1,21 +1,3 @@
-/* .about-container {
-  position: relative;
-  background-image: url('/img/circles.png');
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: left -16px bottom -64px;
-  z-index: 3;
-} */
-
-/* .about-container::after {
-  position: absolute;
-  background-image: url('/img/circles.png');
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: left bottom -64%;
-  z-index: 3;
-} */
-
 .how-play-title-box {
   display: flex;
   justify-content: space-between;
@@ -110,15 +92,11 @@
     background-color: #09604d;
   }
 
-  .how-play-circle {
-    display: none;
-  }
-
   .how-container {
     position: relative;
   }
 
-  .how-circle-after {
+  .how-play-circle {
     position: absolute;
     width: 208px;
     height: auto;
