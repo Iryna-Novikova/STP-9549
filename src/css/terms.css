@@ -112,6 +112,22 @@
   padding-left: 20px;
 }
 
+.terms-circle-after{
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top:  -100px;
+  right: 20px;
+}
+
+.terms-circle-before{
+position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 5px;
+  bottom: -48px;
+}
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
   /* .tp-section {
@@ -150,4 +166,21 @@
   .list-terms {
     padding-left: 30px;
   }
+  .terms-circle-after{
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  top:  -140px;
+  right: auto;
+  left: 170px;
+}
+
+.terms-circle-before{
+position: absolute;
+  width: 230px;
+  height: 230px;
+  left: auto;
+  right: 58px;
+  bottom: -114px;
+}
 }

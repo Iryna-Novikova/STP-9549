@@ -137,6 +137,22 @@
   color: #067b3a;
 }
 
+.cookies-circle-after{
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top:  -90px;
+  right: 20px;
+}
+
+.cookies-circle-before{
+position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 0;
+  bottom: -50px;
+}
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
   .container-cookies {
@@ -157,4 +173,20 @@
   .list-cookies {
     padding-left: 30px;
   }
+
+  .cookies-circle-after{
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  top:  -130px;
+  right: 80px;
+}
+
+.cookies-circle-before{
+position: absolute;
+  width: 230px;
+  height: 230px;
+  left: -22px;
+  bottom: -200px;
+}
 }

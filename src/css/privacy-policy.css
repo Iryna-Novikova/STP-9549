@@ -124,6 +124,22 @@
   color: #067b3a;
 }
 
+.privacy-circle-after{
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top:  -90px;
+  right: 20px;
+}
+
+.privacy-circle-before{
+position: absolute;
+  width: 75px;
+  height: 75px;
+  left: -13px;
+  bottom: -42px;
+}
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
   .tp-section {
@@ -162,4 +178,19 @@
   .list-text {
     padding-left: 30px;
   }
+  .privacy-circle-after{
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  top:  -134px;
+  right: 50px;
+}
+
+.privacy-circle-before{
+position: absolute;
+  width: 230px;
+  height: 230px;
+  left: -10px;
+  bottom: -88px;
+}
 }
