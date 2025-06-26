@@ -52,6 +52,7 @@ color: #094b3c;
 
 .btn-accept {
   background-color: #EEFFDE;
+  transition: background-color 0.3s ease;
   }
 
 .btn-accept:hover {
@@ -64,6 +65,7 @@ color: #094b3c;
 
 .btn-decline {
 background-color:  #c0e0c2;
+transition: background-color 0.3s ease;
  }
 
 .btn-decline:hover {
