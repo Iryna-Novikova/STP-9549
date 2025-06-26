@@ -199,5 +199,20 @@
   .img-circle {
     width: 290px;
     height: 290px;
+    object-fit: none;
+  }
+
+  .what-circle-before {
+    position: absolute;
+    z-index: 10;
+    top: -70px;
+    left: auto;
+    right: 0;
+    width: 130px;
+    overflow: hidden;
+  }
+
+  .what-circle-after {
+    display: none;
   }
 }

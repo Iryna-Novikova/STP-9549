@@ -189,4 +189,8 @@
     height: 46px;
     bottom: -34px;
   }
+
+  .faq-circle-after {
+    display: none;
+  }
 }

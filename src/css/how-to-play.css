@@ -114,6 +114,21 @@
     display: none;
   }
 
+  .how-container {
+    position: relative;
+  }
+
+  .how-circle-after {
+    position: absolute;
+    width: 208px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    bottom: -305px;
+    left: 0;
+  }
+
   .how-play-text-box::after {
     width: 133px;
     height: 2px;

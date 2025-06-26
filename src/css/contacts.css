@@ -90,12 +90,15 @@
 
   .img-circle {
     width: 290px;
+    height: 290px;
   }
 
   .contact-circle-before {
     position: absolute;
-    width:162px; 
+    display: block;
+    width: 162px;
     overflow: hidden;
-    
+    right: 0;
+    top: -60px;
   }
 }
