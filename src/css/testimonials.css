@@ -95,12 +95,14 @@
 
 /* ПРИХОВУЄМО КНОПКИ ЗА ЗАМОВЧУВАННЯМ (ДЛЯ МОБІЛЬНИХ) */
 .swiper-button-prev::after,
-.swiper-button-next::after,
-.swiper-button-prev.slide-testimon-prev-btn,
-.swiper-button-next.slide-testimon-next-btn {
+.swiper-button-next::after {
   display: none;
 }
+/* .swiper-button-prev.slide-testimon-prev-btn,
+.swiper-button-next.slide-testimon-next-btn  */
 
+[data-testimon-next-btn='disabled'] {
+}
 .swiper-wrapper.testimon-slide-wrapper {
   margin-bottom: 24px;
   height: 537px;
