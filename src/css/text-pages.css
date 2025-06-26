@@ -66,37 +66,6 @@
   line-height: 1.87;
 }
 
-.back-link-icon {
-  --color1: #094b3c; 
-  transition: stroke 0.3s ease, --color1 0.3s ease;
-}
-/* Hover ефект на всю лінку */
-.back-link:hover .back-link-icon
-{
-  --color1: #cceab6;
-}
-.back-link:focus .back-link-icon {
-  --color1: #aded7e;
-}
-
-/* .link-cookies {
-  color: #094b3c;
-  text-decoration: underline;
-}
-
-.link-cookies:hover {
-  color: #067b3a;
-}
-.back.link-cookies{
-  color: #094b3c;
-}
-.back-link-icon:hover {
-  color: #cceab6;
-}
-.back-link-icon:focus {
-  color: #aded7e;
-} */
-
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
   .container-cookies {
