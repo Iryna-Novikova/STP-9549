@@ -134,7 +134,11 @@
   height: 88px;
   background: #3b843f;
   position: relative;
+  transition: box-shadow 0.3s ease;
 }
+
+.benefits-item:hover {
+box-shadow: 0 0 10px 1px #105714;}
 
 .benefits-item:nth-of-type(3)::before,
 .benefits-item:nth-of-type(5)::before,
