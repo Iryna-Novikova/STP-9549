@@ -138,7 +138,8 @@
 }
 
 .benefits-item:hover {
-box-shadow: 0 0 10px 1px #105714;}
+  box-shadow: 0 0 10px 1px #105714;
+}
 
 .benefits-item:nth-of-type(3)::before,
 .benefits-item:nth-of-type(5)::before,
@@ -152,7 +153,7 @@ box-shadow: 0 0 10px 1px #105714;}
   left: 50%;
   width: 2px;
   height: 24px;
-  border: 1px solid #09604d;
+  background-color: #09604d;
   transform: translateX(-50%);
 }
 
@@ -233,7 +234,7 @@ box-shadow: 0 0 10px 1px #105714;}
     left: 100%;
     width: calc(100% + 270px);
     height: 2px;
-    border: 1px solid #09604d;
+    background-color: #09604d;
     transform: translateY(-50%);
   }
 
@@ -260,7 +261,7 @@ box-shadow: 0 0 10px 1px #105714;}
     left: 50%;
     width: 2px;
     height: 57px;
-    border: 1px solid #09604d;
+    background-color: #09604d;
     transform: translateX(-50%);
   }
 
