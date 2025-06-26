@@ -1,11 +1,11 @@
 document
-  .getElementById('accept-cookies')
+  .querySelector('[data-accept-cookies]')
   .addEventListener('click', hideCookiesPopup);
 document
-  .getElementById('decline-cookies')
+  .querySelector('[data-decline-cookies]')
   .addEventListener('click', hideCookiesPopup);
 
 function hideCookiesPopup() {
-  const popup = document.getElementById('cookies-popup');
+  const popup = document.getElementById('[data-cookies-popup]');
   popup.style.display = 'none';
 }
