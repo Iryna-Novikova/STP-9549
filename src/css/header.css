@@ -121,7 +121,13 @@ html {
 
 @media only screen and (min-width: 376px) {
   .burger-menu-wrapper {
-    width: 50%;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .burger-menu-wrapper {
+    width: 60%;
   }
 }
 
