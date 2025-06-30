@@ -79,8 +79,8 @@
 }
 
 .testimon-card-img {
-  width: 111px;
-  height: 111px;
+  /* width: 111px;
+  height: 111px; */
   margin: 0 auto 16px;
 }
 
@@ -170,5 +170,10 @@
 
   .swiper-slide.testimon-slide {
     width: 599px;
+  }
+
+  .testimon-card-img {
+    width: 130px;
+    height: 130px;
   }
 }
