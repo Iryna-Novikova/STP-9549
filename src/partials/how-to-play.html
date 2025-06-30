@@ -52,14 +52,24 @@
           </p>
         </li>
       </ul>
-      <img
-        class="how-play-circle img-circle-anim"
-        src="/img/circles.png"
-        width="110"
-        height="110"
-        loading="lazy"
-        decoding="async"
-      />
+      <!-- circle -->
+      <picture class="how-play-circle">
+        <source
+          media="(min-width: 1200px)"
+          srcset="img/desk-circles.webp 1x, /img/desk-circles@2x.webp 2x"
+        />
+        <source
+          media="(max-width: 1199px)"
+          srcset="/img/circles.webp 1x, /img/mob-circles@2x.webp 2x"
+        />
+        <img
+          class="img-circle img-circle-anim"
+          src="/img/desk-circles.webp"
+          alt="Circle img"
+          loading="lazy"
+          decoding="async"
+        />
+      </picture>
     </div>
   </div>
 </section>

@@ -12,8 +12,8 @@
 }
 
 .about-img {
-  width: 60px;
-  height: 60px;
+  /* width: 60px;
+  height: 60px; */
   position: relative;
   z-index: 20;
 }
@@ -87,7 +87,7 @@
     font-size: 20px;
   }
 
-  .about-img {
+  .about-img > img {
     width: 100px;
     height: 100px;
   }
