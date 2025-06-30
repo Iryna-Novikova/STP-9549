@@ -129,12 +129,17 @@
   }
 
   .features-img-title {
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: auto;
     position: absolute;
     z-index: 10;
     top: 0;
     left: 0;
+  }
+
+  .features-img-title > img {
+    width: 100px;
+    height: 100px;
   }
 
   .features-title {
@@ -186,6 +191,11 @@
     right: 16px;
     top: calc(100% + 121px);
     z-index: 10;
+  }
+
+  .features-img-end > img {
+    width: 100px;
+    height: 100px;
   }
 
   .features-item:last-child::after {
