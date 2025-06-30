@@ -60,11 +60,11 @@
   }
 
   .swiper-button-prev.slide-screen-prev-btn {
-    left: 298px;
+    left: 318px;
   }
 
   .swiper-button-next.slide-screen-next-btn {
-    right: 332px;
+    right: 318px;
   }
 
   .swiper-button-prev.slide-screen-prev-btn:hover > .icon-slide,
@@ -109,3 +109,7 @@
 /* .swiper-wrapper.screenshots-slide-wrapper {
   height: 754px;
 } */
+.screenshots-slide-img {
+  width: 424px;
+  height: 754px;
+}

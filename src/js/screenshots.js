@@ -39,7 +39,7 @@ function initScreenShotsSwiper() {
       },
       1200: {
         slidesPerView: 2.4,
-        spaceBetween: 126,
+        spaceBetween: 156,
       },
     },
 
