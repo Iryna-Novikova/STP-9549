@@ -30,6 +30,11 @@
   padding: 16px 37px;
 }
 
+.hero-iphone-img > img {
+  width: 246px;
+  height: 303px;
+}
+
 .hero-title {
   text-align: center;
 }
