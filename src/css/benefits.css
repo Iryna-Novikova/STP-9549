@@ -135,6 +135,7 @@
   background: #3b843f;
   position: relative;
   transition: box-shadow 0.3s ease;
+  z-index: 20;
 }
 
 .benefits-item:hover {
