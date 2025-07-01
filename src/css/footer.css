@@ -10,7 +10,7 @@
   text-align: center;
   gap: 69px;
   color: #eeffde;
-  background-image: url('/img/footer/mob-green-min.png'),
+  background-image: url('/img/footer/mob-green-min.webp'),
     linear-gradient(to bottom right, #67ad56, #67ad56);
   background-repeat: no-repeat;
   background-position: top center, left 0 top 29px;
@@ -65,7 +65,7 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .footer > .container {
-    background-image: url('/img/footer/mob-green@2x-min.png'),
+    background-image: url('/img/footer/mob-green@2x-min.webp'),
       linear-gradient(to bottom right, #67ad56, #67ad56);
   }
 }
@@ -74,7 +74,7 @@
 @media only screen and (min-width: 1200px) {
   .footer > .container {
     padding-top: 71px;
-    background-image: url('/img/footer/desk-greenunion-min.png'),
+    background-image: url('/img/footer/desk-greenunion-min.webp'),
       linear-gradient(to bottom right, #67ad56, #67ad56);
     background-size: 1200px auto;
     background-position: top center, left 0 top 69px;
@@ -96,7 +96,7 @@
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .footer > .container {
-      background-image: url('/img/footer/desk-greenunion@2x-min.png'),
+      background-image: url('/img/footer/desk-greenunion@2x-min.webp'),
         linear-gradient(to bottom right, #67ad56, #67ad56);
     }
   }
