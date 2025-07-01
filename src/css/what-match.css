@@ -33,11 +33,11 @@
   position: relative;
 }
 
-.what-image > img {
+.what-image {
   border: 1px solid #09604d;
   border-radius: 50%;
-  width: 136px;
-  height: 136px;
+  /* width: 136px;
+  height: 136px; */
 }
 
 .what-item:last-child {

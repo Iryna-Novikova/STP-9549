@@ -20,6 +20,11 @@
   margin-bottom: 24px;
 }
 
+/* .screenshots-slide-img {
+  width: 288px;.
+  height: 512px;
+} */
+
 [data-screen-pagination] {
   display: flex;
   gap: 8px;
@@ -100,6 +105,11 @@
   [data-screen-pagination] {
     display: none;
   }
+
+  .screenshots-slide-img {
+    width: 424px;
+    height: 754px;
+  }
 }
 /* .swiper-slide.screenshots-slide > img {
   height: 698px;
@@ -109,7 +119,3 @@
 /* .swiper-wrapper.screenshots-slide-wrapper {
   height: 754px;
 } */
-.screenshots-slide-img {
-  width: 424px;
-  height: 754px;
-}
