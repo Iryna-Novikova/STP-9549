@@ -34,8 +34,11 @@
 }
 
 .what-image {
-  border: 1px solid #09604d;
+  /* border: 1px solid #09604d; */
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* width: 136px;
   height: 136px; */
 }
